@@ -13,6 +13,8 @@ entities:
   - virtual-cell validation map
   - experiment-aware bio agents
   - Kwan Lab-adjacent ideas
+  - future-round biology evaluation harness
+  - representation-boundary benchmark
 entity_metadata:
   - name: simulated nucleus
     entity_type: ProjectIdea
@@ -23,6 +25,10 @@ entity_metadata:
   - name: experiment-aware bio agents
     entity_type: ProjectIdea
   - name: Kwan Lab-adjacent ideas
+    entity_type: ProjectIdea
+  - name: future-round biology evaluation harness
+    entity_type: ProjectIdea
+  - name: representation-boundary benchmark
     entity_type: ProjectIdea
 relations:
   - from: simulated nucleus
@@ -37,6 +43,12 @@ relations:
   - from: experiment-aware bio agents
     type: extends
     to: lab-in-the-loop agents
+  - from: future-round biology evaluation harness
+    type: builds_on
+    to: TadA-Bench
+  - from: representation-boundary benchmark
+    type: compares
+    to: genomic foundation models
 ---
 
 # Project ideas for bio ML and genomics
@@ -64,3 +76,13 @@ Build a map of what counts as validation in virtual-cell research:
 
 ## 4. Experiment-aware bio agents
 A serious version of "agents for biology" would not just summarize papers. It would propose hypotheses, tie them to candidate experiments, and track what evidence would falsify them.
+
+## 5. Future-round biology evaluation harness
+Build a benchmark suite for biological systems that asks whether models improve future experimental decisions instead of just random-split interpolation.
+
+## 6. Representation-boundary benchmark
+Compare where different abstraction levels help most:
+- token or base-level modeling
+- motif-level reasoning
+- isoform-aware structure views
+- interaction-level and interface-level prediction

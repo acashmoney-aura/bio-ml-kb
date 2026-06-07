@@ -1,20 +1,20 @@
 # Markdown graph summary
 
-Generated: 2026-06-07T13:53:15.790Z
+Generated: 2026-06-07T16:12:20.091Z
 
-- Documents: 6
-- Nodes: 66
-- Edges: 103
+- Documents: 9
+- Nodes: 112
+- Edges: 170
 
 ## Entity types
 
-- Method: 9
-- ResearchTheme: 7
+- Method: 18
+- ResearchTheme: 10
+- Task: 9
+- ProjectIdea: 7
 - Unspecified: 5
-- ProjectIdea: 5
-- Task: 2
+- Benchmark: 4
 - SystemDesign: 1
 - Venue: 1
 - FailureMode: 1
-- Benchmark: 1
 

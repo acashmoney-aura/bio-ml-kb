@@ -62,7 +62,16 @@ Updated: 2026-06-07
 | Bio-ML systems | https://arxiv.org/abs/2605.28739 | paper | interpretable symbolic priors in omics ML |
 | Spatial omics | https://arxiv.org/abs/2605.28200 | paper | geometry-first spatial reconstruction |
 | Protein design | https://arxiv.org/abs/2605.26690 | paper | budget-aware biological search |
+| Protein design eval | https://arxiv.org/abs/2606.02624 | benchmark | chronological replay benchmark for future-round discovery |
+| Agentic protein design | https://arxiv.org/abs/2606.02386 | paper | tool-using protein design workflow |
+| Molecular optimization | https://arxiv.org/abs/2606.00555 | paper | probing-guided structure-based optimization |
 | Protein structure | https://arxiv.org/abs/2605.26192 | paper | experiment-guided folding |
 | Viral genomics | https://arxiv.org/abs/2605.25388 | benchmark | reality check for nucleotide FMs |
 | Genome FMs | https://arxiv.org/abs/2602.17162 | paper | predictive latent semantics for DNA |
+| Genome FM eval | https://arxiv.org/abs/2606.04525 | benchmark | honest comparison across genomic model families |
+| Genome FM tokenization | https://arxiv.org/abs/2606.04552 | paper | learnable tokenization for genomics |
+| Structural decision support | https://arxiv.org/abs/2606.04020 | paper | isoform-aware druggability and failure boundaries |
+| Structural decision support | https://arxiv.org/abs/2606.04021 | paper | pre-synthesis degradability triage |
+| Interface modeling | https://arxiv.org/abs/2606.04154 | paper | interaction-first epitope prediction |
+| Structure infrastructure | https://arxiv.org/abs/2606.04566 | paper | throughput acceleration for AF-based PPI screening |
 | Disease modeling | https://arxiv.org/abs/2606.04066 | paper | interpretable tau pathway attribution |

@@ -36,3 +36,4 @@ Build a durable computational-biology knowledge base around genomics, biological
 2. Preserve those notes in markdown with graph-friendly metadata.
 3. Build a queryable graph artifact from markdown rather than waiting for full ontology setup.
 4. Keep the structure clean enough that future daily bio updates can slot in easily.
+5. Expand coverage beyond starter themes into honest evaluation, abstraction-boundary questions, and structure-based decision support.

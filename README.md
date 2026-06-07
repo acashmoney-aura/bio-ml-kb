@@ -25,6 +25,9 @@ A markdown-native knowledge base for computational biology, genomics, biological
 - `topics/brief.md`
 - `topics/notes/virtual-cells-and-genomics-ml.md`
 - `topics/notes/structure-aware-biological-ml.md`
+- `topics/notes/foundation-models-and-abstraction-boundaries.md`
+- `topics/notes/forward-looking-bio-evaluation.md`
+- `topics/notes/structural-decision-support.md`
 - `topics/notes/project-ideas.md`
 - `research_plan/source_registry.md`
 - `research_plan/graph/knowledge-graph-design.md`

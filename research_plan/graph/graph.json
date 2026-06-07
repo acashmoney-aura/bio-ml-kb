@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-07T13:53:15.790Z",
+  "generatedAt": "2026-06-07T16:12:20.091Z",
   "counts": {
-    "nodes": 66,
-    "edges": 103,
-    "documents": 6
+    "nodes": 112,
+    "edges": 170,
+    "documents": 9
   },
   "nodes": [
     {
@@ -31,11 +31,35 @@
       "updated": "2026-06-07"
     },
     {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "label": "Forward-looking evaluation for biological ML and agents",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/forward-looking-bio-evaluation.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "label": "Foundation models and abstraction boundaries in biology",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "updated": "2026-06-07"
+    },
+    {
       "id": "doc:topics/notes/project-ideas.md",
       "label": "Project ideas for bio ML and genomics",
       "nodeType": "document",
       "kind": "synthesis-note",
       "path": "topics/notes/project-ideas.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md",
+      "label": "Structural decision support in biology",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/structural-decision-support.md",
       "updated": "2026-06-07"
     },
     {
@@ -53,6 +77,30 @@
       "kind": "synthesis-note",
       "path": "topics/notes/virtual-cells-and-genomics-ml.md",
       "updated": "2026-06-07"
+    },
+    {
+      "id": "entity:abstraction-boundary",
+      "label": "abstraction boundary",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:adaptive-tokenization",
+      "label": "adaptive tokenization",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:af-cache",
+      "label": "AF_Cache",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:agentplm",
+      "label": "AgentPLM",
+      "nodeType": "entity",
+      "entityType": "Method"
     },
     {
       "id": "entity:aims-fold",
@@ -83,6 +131,30 @@
       "entityType": "Method"
     },
     {
+      "id": "entity:degradomap",
+      "label": "DegradoMap",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:epiformer",
+      "label": "EpiFormer",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:epitope-prediction",
+      "label": "epitope prediction",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
+      "id": "entity:evo-2",
+      "label": "Evo 2",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
       "id": "entity:experiment-aware-bio-agents",
       "label": "experiment-aware bio agents",
       "nodeType": "entity",
@@ -99,16 +171,52 @@
       "nodeType": "entity"
     },
     {
+      "id": "entity:finite-budget-evaluation",
+      "label": "finite-budget evaluation",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
+      "id": "entity:future-round-biology-evaluation-harness",
+      "label": "future-round biology evaluation harness",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:future-round-discovery",
+      "label": "future-round discovery",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
       "id": "entity:gears",
       "label": "GEARS",
       "nodeType": "entity",
       "entityType": "Method"
     },
     {
+      "id": "entity:geneb",
+      "label": "GENEB",
+      "nodeType": "entity",
+      "entityType": "Benchmark"
+    },
+    {
+      "id": "entity:genomic-foundation-models",
+      "label": "genomic foundation models",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
       "id": "entity:genomics-foundation-models",
       "label": "genomics foundation models",
       "nodeType": "entity",
       "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:isoform-aware-druggability",
+      "label": "isoform-aware druggability",
+      "nodeType": "entity",
+      "entityType": "Task"
     },
     {
       "id": "entity:jepa-dna",
@@ -127,6 +235,12 @@
       "label": "lab-in-the-loop agents",
       "nodeType": "entity",
       "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:ldarnet",
+      "label": "LDARNet",
+      "nodeType": "entity",
+      "entityType": "Method"
     },
     {
       "id": "entity:markdown-metadata-graph",
@@ -159,10 +273,22 @@
       "entityType": "FailureMode"
     },
     {
+      "id": "entity:pathway-attribution",
+      "label": "pathway attribution",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
       "id": "entity:predictive-lipidomics-acquisition",
       "label": "predictive lipidomics acquisition",
       "nodeType": "entity",
       "entityType": "Task"
+    },
+    {
+      "id": "entity:probe",
+      "label": "PROBE",
+      "nodeType": "entity",
+      "entityType": "Method"
     },
     {
       "id": "entity:project-ideas",
@@ -171,10 +297,28 @@
       "entityType": "ResearchTheme"
     },
     {
+      "id": "entity:protac-degradability",
+      "label": "PROTAC degradability",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
       "id": "entity:protein-design",
       "label": "protein design",
       "nodeType": "entity",
       "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:representation-benchmarking",
+      "label": "representation benchmarking",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
+      "id": "entity:representation-boundary-benchmark",
+      "label": "representation-boundary benchmark",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
     },
     {
       "id": "entity:sc-taupath",
@@ -206,6 +350,12 @@
       "entityType": "ResearchTheme"
     },
     {
+      "id": "entity:splicebind",
+      "label": "SpliceBind",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
       "id": "entity:structure-aware-biological-ml",
       "label": "structure-aware biological ML",
       "nodeType": "entity",
@@ -216,6 +366,12 @@
       "label": "structure-aware biological ML benchmark",
       "nodeType": "entity",
       "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:tada-bench",
+      "label": "TadA-Bench",
+      "nodeType": "entity",
+      "entityType": "Benchmark"
     },
     {
       "id": "entity:vcworld",
@@ -238,6 +394,18 @@
     {
       "id": "entity:virtual-cells",
       "label": "virtual cells",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:wet-lab-replay-benchmarks",
+      "label": "wet-lab replay benchmarks",
+      "nodeType": "entity",
+      "entityType": "Benchmark"
+    },
+    {
+      "id": "entity:workflow-throughput",
+      "label": "workflow throughput",
       "nodeType": "entity",
       "entityType": "ResearchTheme"
     },
@@ -284,10 +452,64 @@
       "url": "https://arxiv.org/abs/2605.28739"
     },
     {
+      "id": "source:https-arxiv-org-abs-2606-00555",
+      "label": "https://arxiv.org/abs/2606.00555",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.00555"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-02386",
+      "label": "https://arxiv.org/abs/2606.02386",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.02386"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-02624",
+      "label": "https://arxiv.org/abs/2606.02624",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.02624"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04020",
+      "label": "https://arxiv.org/abs/2606.04020",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04020"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04021",
+      "label": "https://arxiv.org/abs/2606.04021",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04021"
+    },
+    {
       "id": "source:https-arxiv-org-abs-2606-04066",
       "label": "https://arxiv.org/abs/2606.04066",
       "nodeType": "source",
       "url": "https://arxiv.org/abs/2606.04066"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04154",
+      "label": "https://arxiv.org/abs/2606.04154",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04154"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04525",
+      "label": "https://arxiv.org/abs/2606.04525",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04525"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04552",
+      "label": "https://arxiv.org/abs/2606.04552",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04552"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04566",
+      "label": "https://arxiv.org/abs/2606.04566",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04566"
     },
     {
       "id": "source:https-arxiv-org-abs-2606-05196",
@@ -314,10 +536,21 @@
       "url": "https://www.biorxiv.org/content/10.64898/2026.05.03.722489v1.full.pdf"
     },
     {
+      "id": "source:https-www-nature-com-articles-s41586-026-10176-5",
+      "label": "https://www.nature.com/articles/s41586-026-10176-5",
+      "nodeType": "source",
+      "url": "https://www.nature.com/articles/s41586-026-10176-5"
+    },
+    {
       "id": "source:https-www-nature-com-articles-s41746-025-02198-6",
       "label": "https://www.nature.com/articles/s41746-025-02198-6",
       "nodeType": "source",
       "url": "https://www.nature.com/articles/s41746-025-02198-6"
+    },
+    {
+      "id": "topic:agents",
+      "label": "agents",
+      "nodeType": "topic"
     },
     {
       "id": "topic:biological-ml",
@@ -335,8 +568,28 @@
       "nodeType": "topic"
     },
     {
+      "id": "topic:degradability",
+      "label": "degradability",
+      "nodeType": "topic"
+    },
+    {
       "id": "topic:disease-modeling",
       "label": "disease-modeling",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:druggability",
+      "label": "druggability",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:evaluation",
+      "label": "evaluation",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:foundation-models",
+      "label": "foundation-models",
       "nodeType": "topic"
     },
     {
@@ -347,6 +600,11 @@
     {
       "id": "topic:graph-building",
       "label": "graph-building",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:interfaces",
+      "label": "interfaces",
       "nodeType": "topic"
     },
     {
@@ -385,13 +643,28 @@
       "nodeType": "topic"
     },
     {
+      "id": "topic:structure-biology",
+      "label": "structure-biology",
+      "nodeType": "topic"
+    },
+    {
       "id": "topic:systems-biology",
       "label": "systems-biology",
       "nodeType": "topic"
     },
     {
+      "id": "topic:tokenization",
+      "label": "tokenization",
+      "nodeType": "topic"
+    },
+    {
       "id": "topic:virtual-cells",
       "label": "virtual-cells",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:wet-lab-relevance",
+      "label": "wet-lab-relevance",
       "nodeType": "topic"
     }
   ],
@@ -621,6 +894,209 @@
       "source": "topics/brief.md"
     },
     {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::cites::source:https-arxiv-org-abs-2605-26690",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2605-26690",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::cites::source:https-arxiv-org-abs-2606-00555",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-00555",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::cites::source:https-arxiv-org-abs-2606-02386",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-02386",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::cites::source:https-arxiv-org-abs-2606-02624",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-02624",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::has_topic::topic:agents",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "has_topic",
+      "to": "topic:agents",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::has_topic::topic:evaluation",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "has_topic",
+      "to": "topic:evaluation",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::has_topic::topic:protein-design",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "has_topic",
+      "to": "topic:protein-design",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::has_topic::topic:wet-lab-relevance",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "has_topic",
+      "to": "topic:wet-lab-relevance",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:agentplm",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:agentplm",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:finite-budget-evaluation",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:finite-budget-evaluation",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:future-round-discovery",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:future-round-discovery",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:probe",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:probe",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:silo",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:silo",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:tada-bench",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:tada-bench",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md::mentions::entity:wet-lab-replay-benchmarks",
+      "from": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "type": "mentions",
+      "to": "entity:wet-lab-replay-benchmarks",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::cites::source:https-arxiv-org-abs-2606-04525",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04525",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::cites::source:https-arxiv-org-abs-2606-04552",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04552",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::cites::source:https-www-nature-com-articles-s41586-026-10176-5",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "cites",
+      "to": "source:https-www-nature-com-articles-s41586-026-10176-5",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::has_topic::topic:evaluation",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "has_topic",
+      "to": "topic:evaluation",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::has_topic::topic:foundation-models",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "has_topic",
+      "to": "topic:foundation-models",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::has_topic::topic:genomics",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::has_topic::topic:tokenization",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "has_topic",
+      "to": "topic:tokenization",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:abstraction-boundary",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:abstraction-boundary",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:adaptive-tokenization",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:adaptive-tokenization",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:evo-2",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:evo-2",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:geneb",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:geneb",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:genomic-foundation-models",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:genomic-foundation-models",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:ldarnet",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:ldarnet",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md::mentions::entity:representation-benchmarking",
+      "from": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "type": "mentions",
+      "to": "entity:representation-benchmarking",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
       "id": "doc:topics/notes/project-ideas.md::has_topic::topic:biological-ml",
       "from": "doc:topics/notes/project-ideas.md",
       "type": "has_topic",
@@ -656,10 +1132,24 @@
       "source": "topics/notes/project-ideas.md"
     },
     {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:future-round-biology-evaluation-harness",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:future-round-biology-evaluation-harness",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
       "id": "doc:topics/notes/project-ideas.md::mentions::entity:kwan-lab-adjacent-ideas",
       "from": "doc:topics/notes/project-ideas.md",
       "type": "mentions",
       "to": "entity:kwan-lab-adjacent-ideas",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:representation-boundary-benchmark",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:representation-boundary-benchmark",
       "source": "topics/notes/project-ideas.md"
     },
     {
@@ -682,6 +1172,146 @@
       "type": "mentions",
       "to": "entity:virtual-cell-validation-map",
       "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::cites::source:https-arxiv-org-abs-2606-04020",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04020",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::cites::source:https-arxiv-org-abs-2606-04021",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04021",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::cites::source:https-arxiv-org-abs-2606-04066",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04066",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::cites::source:https-arxiv-org-abs-2606-04154",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04154",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::cites::source:https-arxiv-org-abs-2606-04566",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04566",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::has_topic::topic:degradability",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "has_topic",
+      "to": "topic:degradability",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::has_topic::topic:disease-modeling",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "has_topic",
+      "to": "topic:disease-modeling",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::has_topic::topic:druggability",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "has_topic",
+      "to": "topic:druggability",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::has_topic::topic:interfaces",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "has_topic",
+      "to": "topic:interfaces",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::has_topic::topic:structure-biology",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "has_topic",
+      "to": "topic:structure-biology",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:af-cache",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:af-cache",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:degradomap",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:degradomap",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:epiformer",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:epiformer",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:epitope-prediction",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:epitope-prediction",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:isoform-aware-druggability",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:isoform-aware-druggability",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:pathway-attribution",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:pathway-attribution",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:protac-degradability",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:protac-degradability",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:sc-taupath",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:sc-taupath",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:splicebind",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:splicebind",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md::mentions::entity:workflow-throughput",
+      "from": "doc:topics/notes/structural-decision-support.md",
+      "type": "mentions",
+      "to": "entity:workflow-throughput",
+      "source": "topics/notes/structural-decision-support.md"
     },
     {
       "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2602-17162",
@@ -964,6 +1594,20 @@
       "source": "topics/notes/virtual-cells-and-genomics-ml.md"
     },
     {
+      "id": "entity:af-cache::improves::entity:workflow-throughput",
+      "from": "entity:af-cache",
+      "type": "improves",
+      "to": "entity:workflow-throughput",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "entity:agentplm::supports::entity:finite-budget-evaluation",
+      "from": "entity:agentplm",
+      "type": "supports",
+      "to": "entity:finite-budget-evaluation",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
       "id": "entity:aims-fold::constrains_with::entity:experimental-data",
       "from": "entity:aims-fold",
       "type": "constrains_with",
@@ -985,10 +1629,38 @@
       "source": "topics/notes/structure-aware-biological-ml.md"
     },
     {
+      "id": "entity:degradomap::targets::entity:protac-degradability",
+      "from": "entity:degradomap",
+      "type": "targets",
+      "to": "entity:protac-degradability",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "entity:epiformer::targets::entity:epitope-prediction",
+      "from": "entity:epiformer",
+      "type": "targets",
+      "to": "entity:epitope-prediction",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "entity:evo-2::exemplifies::entity:genomic-foundation-models",
+      "from": "entity:evo-2",
+      "type": "exemplifies",
+      "to": "entity:genomic-foundation-models",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
       "id": "entity:experiment-aware-bio-agents::extends::entity:lab-in-the-loop-agents",
       "from": "entity:experiment-aware-bio-agents",
       "type": "extends",
       "to": "entity:lab-in-the-loop-agents",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "entity:future-round-biology-evaluation-harness::builds_on::entity:tada-bench",
+      "from": "entity:future-round-biology-evaluation-harness",
+      "type": "builds_on",
+      "to": "entity:tada-bench",
       "source": "topics/notes/project-ideas.md"
     },
     {
@@ -999,11 +1671,25 @@
       "source": "topics/notes/structure-aware-biological-ml.md"
     },
     {
+      "id": "entity:geneb::benchmarks::entity:genomic-foundation-models",
+      "from": "entity:geneb",
+      "type": "benchmarks",
+      "to": "entity:genomic-foundation-models",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
       "id": "entity:jepa-dna::exemplifies::entity:structure-aware-biological-ml",
       "from": "entity:jepa-dna",
       "type": "exemplifies",
       "to": "entity:structure-aware-biological-ml",
       "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:ldarnet::uses::entity:adaptive-tokenization",
+      "from": "entity:ldarnet",
+      "type": "uses",
+      "to": "entity:adaptive-tokenization",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
     },
     {
       "id": "entity:markdown-metadata-graph::expands::entity:bio-ml-knowledge-base",
@@ -1032,6 +1718,41 @@
       "type": "models",
       "to": "entity:experimental-process",
       "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:probe::improves::entity:finite-budget-evaluation",
+      "from": "entity:probe",
+      "type": "improves",
+      "to": "entity:finite-budget-evaluation",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "entity:representation-benchmarking::clarifies::entity:abstraction-boundary",
+      "from": "entity:representation-benchmarking",
+      "type": "clarifies",
+      "to": "entity:abstraction-boundary",
+      "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "entity:representation-boundary-benchmark::compares::entity:genomic-foundation-models",
+      "from": "entity:representation-boundary-benchmark",
+      "type": "compares",
+      "to": "entity:genomic-foundation-models",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "entity:sc-taupath::targets::entity:pathway-attribution",
+      "from": "entity:sc-taupath",
+      "type": "targets",
+      "to": "entity:pathway-attribution",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
+      "id": "entity:silo::improves::entity:finite-budget-evaluation",
+      "from": "entity:silo",
+      "type": "improves",
+      "to": "entity:finite-budget-evaluation",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
     },
     {
       "id": "entity:simulated-nucleus::builds_on::entity:virtual-cells",
@@ -1069,6 +1790,13 @@
       "source": "topics/brief.md"
     },
     {
+      "id": "entity:splicebind::targets::entity:isoform-aware-druggability",
+      "from": "entity:splicebind",
+      "type": "targets",
+      "to": "entity:isoform-aware-druggability",
+      "source": "topics/notes/structural-decision-support.md"
+    },
+    {
       "id": "entity:structure-aware-biological-ml-benchmark::compares::entity:structure-aware-biological-ml",
       "from": "entity:structure-aware-biological-ml-benchmark",
       "type": "compares",
@@ -1081,6 +1809,20 @@
       "type": "informs",
       "to": "entity:genomics-foundation-models",
       "source": "topics/brief.md"
+    },
+    {
+      "id": "entity:tada-bench::evaluates::entity:future-round-discovery",
+      "from": "entity:tada-bench",
+      "type": "evaluates",
+      "to": "entity:future-round-discovery",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "entity:tada-bench::exemplifies::entity:wet-lab-replay-benchmarks",
+      "from": "entity:tada-bench",
+      "type": "exemplifies",
+      "to": "entity:wet-lab-replay-benchmarks",
+      "source": "topics/notes/forward-looking-bio-evaluation.md"
     },
     {
       "id": "entity:vcworld::advances::entity:virtual-cells",
@@ -1119,20 +1861,20 @@
     }
   ],
   "nodeTypeCounts": {
-    "document": 6,
-    "entity": 32,
-    "source": 13,
-    "topic": 15
+    "document": 9,
+    "entity": 56,
+    "source": 23,
+    "topic": 24
   },
   "entityTypeCounts": {
-    "Method": 9,
+    "ResearchTheme": 10,
+    "Method": 18,
     "Unspecified": 5,
-    "ProjectIdea": 5,
-    "ResearchTheme": 7,
+    "Task": 9,
+    "ProjectIdea": 7,
+    "Benchmark": 4,
     "SystemDesign": 1,
-    "Task": 2,
     "Venue": 1,
-    "FailureMode": 1,
-    "Benchmark": 1
+    "FailureMode": 1
   }
 }
