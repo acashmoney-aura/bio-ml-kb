@@ -1,6 +1,6 @@
 # Markdown graph summary
 
-Generated: 2026-06-07T16:12:20.091Z
+Generated: 2026-06-07
 
 - Documents: 9
 - Nodes: 112

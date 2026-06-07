@@ -76,7 +76,13 @@ for (const file of walk(repoRoot)) {
   for (const src of [...new Set([...(parsed.sources||[]), parsed.url].filter(Boolean))]) { const id=`source:${slugify(src)}`; addNode(nodes,id,{label:src,nodeType:'source',url:src}); addEdge(edges,docId,'cites',id,{source:relPath}); }
   for (const rel of parsed.relations || []) { if (!rel.from || !rel.type || !rel.to) continue; const from=`entity:${slugify(rel.from)}`; const to=`entity:${slugify(rel.to)}`; addNode(nodes,from,{label:rel.from,nodeType:'entity'}); addNode(nodes,to,{label:rel.to,nodeType:'entity'}); addEdge(edges,from,rel.type,to,{source:relPath}); }
 }
-const graph = { generatedAt: new Date().toISOString(), counts: { nodes:nodes.size, edges:edges.size, documents:docs.length }, nodes:[...nodes.values()].sort((a,b)=>a.id.localeCompare(b.id)), edges:[...edges.values()].sort((a,b)=>a.id.localeCompare(b.id)) };
+const docsSorted = docs.slice().sort((a, b) => a.path.localeCompare(b.path));
+const generatedAt = docsSorted
+  .map(doc => doc.data.updated || null)
+  .filter(Boolean)
+  .sort()
+  .at(-1) || 'unknown';
+const graph = { generatedAt, counts: { nodes:nodes.size, edges:edges.size, documents:docs.length }, nodes:[...nodes.values()].sort((a,b)=>a.id.localeCompare(b.id)), edges:[...edges.values()].sort((a,b)=>a.id.localeCompare(b.id)) };
 graph.nodeTypeCounts = graph.nodes.reduce((a,n)=>((a[n.nodeType||'unknown']=(a[n.nodeType||'unknown']||0)+1),a),{});
 graph.entityTypeCounts = graph.nodes.filter(n=>n.nodeType==='entity').reduce((a,n)=>((a[n.entityType||'Unspecified']=(a[n.entityType||'Unspecified']||0)+1),a),{});
 fs.mkdirSync(graphDir,{recursive:true}); fs.mkdirSync(docsDataDir,{recursive:true});
