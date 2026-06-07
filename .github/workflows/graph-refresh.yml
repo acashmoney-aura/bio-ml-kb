@@ -1,0 +1,18 @@
+name: graph-refresh
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Rebuild graph
+        run: node scripts/build_markdown_graph.js
+      - name: Ensure artifacts committed
+        run: git diff --exit-code

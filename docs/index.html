@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bio ML Knowledge Base</title>
+  <style>
+    :root{--bg:#06131c;--panel:#0f1d2b;--panel2:#13273a;--text:#eef8ff;--muted:#a9c1d6;--accent:#6ee7b7;--accent2:#60a5fa;--border:rgba(255,255,255,.08);--max:1180px}
+    *{box-sizing:border-box} body{margin:0;font:16px/1.6 Inter,system-ui,sans-serif;background:linear-gradient(180deg,#071019,#0b1622 100%);color:var(--text)} a{color:var(--accent2)} .wrap{max-width:var(--max);margin:0 auto;padding:28px 20px 72px}.hero{padding:34px 0 22px;border-bottom:1px solid var(--border);margin-bottom:28px}.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:12px}h1{font-size:clamp(34px,7vw,64px);margin:10px 0 12px;line-height:1.1}.lede{font-size:19px;color:var(--muted);max-width:800px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0}.card{background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.18)}.stat{font-size:34px;font-weight:800}.pill{display:inline-block;padding:6px 10px;margin:4px 6px 0 0;border-radius:999px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.18);color:#d8ebff;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.list{padding-left:18px}.muted{color:var(--muted)}@media (max-width:900px){.split{grid-template-columns:1fr}} .footer{margin-top:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:18px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero"><div class="eyebrow">markdown-native graph mode · computational biology</div><h1>Bio ML Knowledge Base</h1><p class="lede">A graph-backed map of genomics, biological ML, virtual-cell ideas, spatial omics, protein design, and comp-bio project directions.</p><div id="pills"></div></section>
+<section class="grid" id="stats"></section>
+<section class="split"><article class="card"><h2>What this repo is for</h2><p class="muted">This is a systems map, not just a pile of links. The graph comes from markdown frontmatter so notes stay easy to edit while methods, themes, tasks, and project ideas become structured.</p></article><article class="card"><h2>Key files</h2><ul class="list"><li><a href="../README.md">README</a></li><li><a href="../topics/brief.md">Brief</a></li><li><a href="../topics/notes/virtual-cells-and-genomics-ml.md">Virtual cells note</a></li><li><a href="../topics/notes/structure-aware-biological-ml.md">Structure-aware bio ML</a></li><li><a href="../topics/notes/project-ideas.md">Project ideas</a></li></ul></article></section>
+<section class="grid"><article class="card"><h2>Entity types</h2><div id="entity-types"></div></article><article class="card"><h2>Top entities</h2><ol class="list" id="entities"></ol></article><article class="card"><h2>Sample relations</h2><ol class="list" id="relations"></ol></article></section>
+<p class="footer" id="footer">Loading graph…</p>
+</div>
+<script>
+(async()=>{const g=await fetch('./data/graph.json',{cache:'no-store'}).then(r=>r.json());const pills=['genomics','biological ML','virtual cells','spatial omics','protein design','project ideas'];document.getElementById('pills').innerHTML=pills.map(x=>`<span class="pill">${x}</span>`).join('');const stats=[['Documents',g.counts.documents],['Nodes',g.counts.nodes],['Edges',g.counts.edges],['Entity types',Object.keys(g.entityTypeCounts||{}).length]];document.getElementById('stats').innerHTML=stats.map(([k,v])=>`<article class="card"><div class="stat">${v}</div><div class="muted">${k}</div></article>`).join('');document.getElementById('entity-types').innerHTML=Object.entries(g.entityTypeCounts||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<span class="pill">${k} · ${v}</span>`).join('');const nodes=new Map((g.nodes||[]).map(n=>[n.id,n]));const entityDegree=new Map();for(const e of g.edges||[]){for(const side of [e.from,e.to]){const n=nodes.get(side);if(n&&n.nodeType==='entity')entityDegree.set(n.label,(entityDegree.get(n.label)||0)+1)}}document.getElementById('entities').innerHTML=Array.from(entityDegree.entries()).sort((a,b)=>b[1]-a[1]).slice(0,12).map(([n,d])=>`<li><strong>${n}</strong> <span class="muted">(${d} links)</span></li>`).join('');document.getElementById('relations').innerHTML=(g.edges||[]).filter(e=>e.from.startsWith('entity:')&&e.to.startsWith('entity:')).slice(0,12).map(e=>`<li><strong>${nodes.get(e.from)?.label||e.from}</strong> <span class="muted">${e.type}</span> <strong>${nodes.get(e.to)?.label||e.to}</strong></li>`).join('');document.getElementById('footer').textContent=`Graph last rebuilt: ${g.generatedAt}`;})();
+</script>
+</body>
+</html>

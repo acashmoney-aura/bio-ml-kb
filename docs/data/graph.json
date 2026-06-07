@@ -1,0 +1,1138 @@
+{
+  "generatedAt": "2026-06-07T13:53:15.790Z",
+  "counts": {
+    "nodes": 66,
+    "edges": 103,
+    "documents": 6
+  },
+  "nodes": [
+    {
+      "id": "doc:research_plan/current_plan.md",
+      "label": "Current Plan",
+      "nodeType": "document",
+      "kind": "plan",
+      "path": "research_plan/current_plan.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md",
+      "label": "Source Registry",
+      "nodeType": "document",
+      "kind": "registry",
+      "path": "research_plan/source_registry.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/brief.md",
+      "label": "Bio ML KB Brief",
+      "nodeType": "document",
+      "kind": "brief",
+      "path": "topics/brief.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md",
+      "label": "Project ideas for bio ML and genomics",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/project-ideas.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md",
+      "label": "Structure-aware biological ML",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/structure-aware-biological-ml.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "label": "Virtual cells, interpretable biology models, and genomics ML",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/virtual-cells-and-genomics-ml.md",
+      "updated": "2026-06-07"
+    },
+    {
+      "id": "entity:aims-fold",
+      "label": "AIMS-Fold",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:annotatemissense",
+      "label": "AnnotateMissense",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:bio-ml-knowledge-base",
+      "label": "bio ML knowledge base",
+      "nodeType": "entity"
+    },
+    {
+      "id": "entity:biological-conclusions",
+      "label": "biological conclusions",
+      "nodeType": "entity"
+    },
+    {
+      "id": "entity:birdnet",
+      "label": "BIRDNet",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:experiment-aware-bio-agents",
+      "label": "experiment-aware bio agents",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:experimental-data",
+      "label": "experimental data",
+      "nodeType": "entity"
+    },
+    {
+      "id": "entity:experimental-process",
+      "label": "experimental process",
+      "nodeType": "entity"
+    },
+    {
+      "id": "entity:gears",
+      "label": "GEARS",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:genomics-foundation-models",
+      "label": "genomics foundation models",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:jepa-dna",
+      "label": "JEPA-DNA",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:kwan-lab-adjacent-ideas",
+      "label": "Kwan Lab-adjacent ideas",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:lab-in-the-loop-agents",
+      "label": "lab-in-the-loop agents",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:markdown-metadata-graph",
+      "label": "markdown metadata graph",
+      "nodeType": "entity",
+      "entityType": "SystemDesign"
+    },
+    {
+      "id": "entity:mechanistic-simulation",
+      "label": "mechanistic simulation",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:missense-variant-prediction",
+      "label": "missense variant prediction",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
+      "id": "entity:mlgenx",
+      "label": "MLGenX",
+      "nodeType": "entity",
+      "entityType": "Venue"
+    },
+    {
+      "id": "entity:null-model-bias",
+      "label": "null-model bias",
+      "nodeType": "entity",
+      "entityType": "FailureMode"
+    },
+    {
+      "id": "entity:predictive-lipidomics-acquisition",
+      "label": "predictive lipidomics acquisition",
+      "nodeType": "entity",
+      "entityType": "Task"
+    },
+    {
+      "id": "entity:project-ideas",
+      "label": "project ideas",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:protein-design",
+      "label": "protein design",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:sc-taupath",
+      "label": "SC-TauPath",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:silo",
+      "label": "SILO",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:simulated-nucleus",
+      "label": "simulated nucleus",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:source-registry",
+      "label": "Source Registry",
+      "nodeType": "entity"
+    },
+    {
+      "id": "entity:spatial-single-cell-reconstruction",
+      "label": "spatial single-cell reconstruction",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:structure-aware-biological-ml",
+      "label": "structure-aware biological ML",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "entity:structure-aware-biological-ml-benchmark",
+      "label": "structure-aware biological ML benchmark",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:vcworld",
+      "label": "VCWorld",
+      "nodeType": "entity",
+      "entityType": "Method"
+    },
+    {
+      "id": "entity:virobench",
+      "label": "ViroBench",
+      "nodeType": "entity",
+      "entityType": "Benchmark"
+    },
+    {
+      "id": "entity:virtual-cell-validation-map",
+      "label": "virtual-cell validation map",
+      "nodeType": "entity",
+      "entityType": "ProjectIdea"
+    },
+    {
+      "id": "entity:virtual-cells",
+      "label": "virtual cells",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2512-00306",
+      "label": "https://arxiv.org/abs/2512.00306",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2512.00306"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2602-17162",
+      "label": "https://arxiv.org/abs/2602.17162",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2602.17162"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2605-25388",
+      "label": "https://arxiv.org/abs/2605.25388",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2605.25388"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2605-26192",
+      "label": "https://arxiv.org/abs/2605.26192",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2605.26192"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2605-26690",
+      "label": "https://arxiv.org/abs/2605.26690",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2605.26690"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2605-28200",
+      "label": "https://arxiv.org/abs/2605.28200",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2605.28200"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2605-28739",
+      "label": "https://arxiv.org/abs/2605.28739",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2605.28739"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-04066",
+      "label": "https://arxiv.org/abs/2606.04066",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.04066"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-05196",
+      "label": "https://arxiv.org/abs/2606.05196",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.05196"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-05225",
+      "label": "https://arxiv.org/abs/2606.05225",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.05225"
+    },
+    {
+      "id": "source:https-iclr-cc-virtual-2026-workshop-10000787",
+      "label": "https://iclr.cc/virtual/2026/workshop/10000787",
+      "nodeType": "source",
+      "url": "https://iclr.cc/virtual/2026/workshop/10000787"
+    },
+    {
+      "id": "source:https-www-biorxiv-org-content-10-64898-2026-05-03-722489v1-full-pdf",
+      "label": "https://www.biorxiv.org/content/10.64898/2026.05.03.722489v1.full.pdf",
+      "nodeType": "source",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.03.722489v1.full.pdf"
+    },
+    {
+      "id": "source:https-www-nature-com-articles-s41746-025-02198-6",
+      "label": "https://www.nature.com/articles/s41746-025-02198-6",
+      "nodeType": "source",
+      "url": "https://www.nature.com/articles/s41746-025-02198-6"
+    },
+    {
+      "id": "topic:biological-ml",
+      "label": "biological-ml",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:comp-bio",
+      "label": "comp-bio",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:computational-biology",
+      "label": "computational-biology",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:disease-modeling",
+      "label": "disease-modeling",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:genomics",
+      "label": "genomics",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:graph-building",
+      "label": "graph-building",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:interpretability",
+      "label": "interpretability",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:mechanistic-modeling",
+      "label": "mechanistic-modeling",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:planning",
+      "label": "planning",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:project-ideas",
+      "label": "project-ideas",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:protein-design",
+      "label": "protein-design",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:sources",
+      "label": "sources",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:spatial-omics",
+      "label": "spatial-omics",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:systems-biology",
+      "label": "systems-biology",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:virtual-cells",
+      "label": "virtual-cells",
+      "nodeType": "topic"
+    }
+  ],
+  "edges": [
+    {
+      "id": "doc:research_plan/current_plan.md::has_topic::topic:comp-bio",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "has_topic",
+      "to": "topic:comp-bio",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md::has_topic::topic:graph-building",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "has_topic",
+      "to": "topic:graph-building",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md::has_topic::topic:planning",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "has_topic",
+      "to": "topic:planning",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md::mentions::entity:markdown-metadata-graph",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "mentions",
+      "to": "entity:markdown-metadata-graph",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md::mentions::entity:project-ideas",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "mentions",
+      "to": "entity:project-ideas",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md::mentions::entity:structure-aware-biological-ml",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "mentions",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md::mentions::entity:virtual-cells",
+      "from": "doc:research_plan/current_plan.md",
+      "type": "mentions",
+      "to": "entity:virtual-cells",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::has_topic::topic:computational-biology",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "has_topic",
+      "to": "topic:computational-biology",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::has_topic::topic:genomics",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::has_topic::topic:sources",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "has_topic",
+      "to": "topic:sources",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:aims-fold",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:aims-fold",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:annotatemissense",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:annotatemissense",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:birdnet",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:birdnet",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:gears",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:gears",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:jepa-dna",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:jepa-dna",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:mlgenx",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:mlgenx",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:sc-taupath",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:sc-taupath",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:silo",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:silo",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:vcworld",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:vcworld",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md::mentions::entity:virobench",
+      "from": "doc:research_plan/source_registry.md",
+      "type": "mentions",
+      "to": "entity:virobench",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "doc:topics/brief.md::has_topic::topic:biological-ml",
+      "from": "doc:topics/brief.md",
+      "type": "has_topic",
+      "to": "topic:biological-ml",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::has_topic::topic:computational-biology",
+      "from": "doc:topics/brief.md",
+      "type": "has_topic",
+      "to": "topic:computational-biology",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::has_topic::topic:genomics",
+      "from": "doc:topics/brief.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::has_topic::topic:project-ideas",
+      "from": "doc:topics/brief.md",
+      "type": "has_topic",
+      "to": "topic:project-ideas",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::has_topic::topic:virtual-cells",
+      "from": "doc:topics/brief.md",
+      "type": "has_topic",
+      "to": "topic:virtual-cells",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:genomics-foundation-models",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:genomics-foundation-models",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:kwan-lab-adjacent-ideas",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:kwan-lab-adjacent-ideas",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:protein-design",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:protein-design",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:simulated-nucleus",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:simulated-nucleus",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:spatial-single-cell-reconstruction",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:spatial-single-cell-reconstruction",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:structure-aware-biological-ml",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/brief.md::mentions::entity:virtual-cells",
+      "from": "doc:topics/brief.md",
+      "type": "mentions",
+      "to": "entity:virtual-cells",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::has_topic::topic:biological-ml",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "has_topic",
+      "to": "topic:biological-ml",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::has_topic::topic:genomics",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::has_topic::topic:project-ideas",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "has_topic",
+      "to": "topic:project-ideas",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::has_topic::topic:systems-biology",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "has_topic",
+      "to": "topic:systems-biology",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:experiment-aware-bio-agents",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:experiment-aware-bio-agents",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:kwan-lab-adjacent-ideas",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:kwan-lab-adjacent-ideas",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:simulated-nucleus",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:simulated-nucleus",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:structure-aware-biological-ml-benchmark",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:structure-aware-biological-ml-benchmark",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md::mentions::entity:virtual-cell-validation-map",
+      "from": "doc:topics/notes/project-ideas.md",
+      "type": "mentions",
+      "to": "entity:virtual-cell-validation-map",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2602-17162",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2602-17162",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2605-25388",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2605-25388",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2605-26192",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2605-26192",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2605-26690",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2605-26690",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2605-28200",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2605-28200",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2605-28739",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2605-28739",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2606-04066",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-04066",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2606-05196",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-05196",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::cites::source:https-arxiv-org-abs-2606-05225",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-05225",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::has_topic::topic:biological-ml",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "has_topic",
+      "to": "topic:biological-ml",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::has_topic::topic:disease-modeling",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "has_topic",
+      "to": "topic:disease-modeling",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::has_topic::topic:interpretability",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "has_topic",
+      "to": "topic:interpretability",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::has_topic::topic:protein-design",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "has_topic",
+      "to": "topic:protein-design",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::has_topic::topic:spatial-omics",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "has_topic",
+      "to": "topic:spatial-omics",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:aims-fold",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:aims-fold",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:birdnet",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:birdnet",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:gears",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:gears",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:jepa-dna",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:jepa-dna",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:null-model-bias",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:null-model-bias",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:predictive-lipidomics-acquisition",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:predictive-lipidomics-acquisition",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:sc-taupath",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:sc-taupath",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:silo",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:silo",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:structure-aware-biological-ml",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md::mentions::entity:virobench",
+      "from": "doc:topics/notes/structure-aware-biological-ml.md",
+      "type": "mentions",
+      "to": "entity:virobench",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::cites::source:https-arxiv-org-abs-2512-00306",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2512-00306",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::cites::source:https-iclr-cc-virtual-2026-workshop-10000787",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "cites",
+      "to": "source:https-iclr-cc-virtual-2026-workshop-10000787",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::cites::source:https-www-biorxiv-org-content-10-64898-2026-05-03-722489v1-full-pdf",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "cites",
+      "to": "source:https-www-biorxiv-org-content-10-64898-2026-05-03-722489v1-full-pdf",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::cites::source:https-www-nature-com-articles-s41746-025-02198-6",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "cites",
+      "to": "source:https-www-nature-com-articles-s41746-025-02198-6",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::has_topic::topic:biological-ml",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "has_topic",
+      "to": "topic:biological-ml",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::has_topic::topic:genomics",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::has_topic::topic:mechanistic-modeling",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "has_topic",
+      "to": "topic:mechanistic-modeling",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::has_topic::topic:virtual-cells",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "has_topic",
+      "to": "topic:virtual-cells",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:annotatemissense",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:annotatemissense",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:lab-in-the-loop-agents",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:lab-in-the-loop-agents",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:mechanistic-simulation",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:mechanistic-simulation",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:missense-variant-prediction",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:missense-variant-prediction",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:mlgenx",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:mlgenx",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:simulated-nucleus",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:simulated-nucleus",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:vcworld",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:vcworld",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md::mentions::entity:virtual-cells",
+      "from": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "type": "mentions",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "entity:aims-fold::constrains_with::entity:experimental-data",
+      "from": "entity:aims-fold",
+      "type": "constrains_with",
+      "to": "entity:experimental-data",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:annotatemissense::targets::entity:missense-variant-prediction",
+      "from": "entity:annotatemissense",
+      "type": "targets",
+      "to": "entity:missense-variant-prediction",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "entity:birdnet::exemplifies::entity:structure-aware-biological-ml",
+      "from": "entity:birdnet",
+      "type": "exemplifies",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:experiment-aware-bio-agents::extends::entity:lab-in-the-loop-agents",
+      "from": "entity:experiment-aware-bio-agents",
+      "type": "extends",
+      "to": "entity:lab-in-the-loop-agents",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "entity:gears::exemplifies::entity:structure-aware-biological-ml",
+      "from": "entity:gears",
+      "type": "exemplifies",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:jepa-dna::exemplifies::entity:structure-aware-biological-ml",
+      "from": "entity:jepa-dna",
+      "type": "exemplifies",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:markdown-metadata-graph::expands::entity:bio-ml-knowledge-base",
+      "from": "entity:markdown-metadata-graph",
+      "type": "expands",
+      "to": "entity:bio-ml-knowledge-base",
+      "source": "research_plan/current_plan.md"
+    },
+    {
+      "id": "entity:mlgenx::emphasizes::entity:lab-in-the-loop-agents",
+      "from": "entity:mlgenx",
+      "type": "emphasizes",
+      "to": "entity:lab-in-the-loop-agents",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "entity:null-model-bias::can_distort::entity:biological-conclusions",
+      "from": "entity:null-model-bias",
+      "type": "can_distort",
+      "to": "entity:biological-conclusions",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:predictive-lipidomics-acquisition::models::entity:experimental-process",
+      "from": "entity:predictive-lipidomics-acquisition",
+      "type": "models",
+      "to": "entity:experimental-process",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:simulated-nucleus::builds_on::entity:virtual-cells",
+      "from": "entity:simulated-nucleus",
+      "type": "builds_on",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "entity:source-registry::tracks::entity:birdnet",
+      "from": "entity:source-registry",
+      "type": "tracks",
+      "to": "entity:birdnet",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "entity:source-registry::tracks::entity:vcworld",
+      "from": "entity:source-registry",
+      "type": "tracks",
+      "to": "entity:vcworld",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "entity:source-registry::tracks::entity:virobench",
+      "from": "entity:source-registry",
+      "type": "tracks",
+      "to": "entity:virobench",
+      "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "entity:spatial-single-cell-reconstruction::informs::entity:virtual-cells",
+      "from": "entity:spatial-single-cell-reconstruction",
+      "type": "informs",
+      "to": "entity:virtual-cells",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "entity:structure-aware-biological-ml-benchmark::compares::entity:structure-aware-biological-ml",
+      "from": "entity:structure-aware-biological-ml-benchmark",
+      "type": "compares",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "entity:structure-aware-biological-ml::informs::entity:genomics-foundation-models",
+      "from": "entity:structure-aware-biological-ml",
+      "type": "informs",
+      "to": "entity:genomics-foundation-models",
+      "source": "topics/brief.md"
+    },
+    {
+      "id": "entity:vcworld::advances::entity:virtual-cells",
+      "from": "entity:vcworld",
+      "type": "advances",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "entity:vcworld::uses::entity:mechanistic-simulation",
+      "from": "entity:vcworld",
+      "type": "uses",
+      "to": "entity:mechanistic-simulation",
+      "source": "topics/notes/virtual-cells-and-genomics-ml.md"
+    },
+    {
+      "id": "entity:virobench::benchmarks::entity:genomics-foundation-models",
+      "from": "entity:virobench",
+      "type": "benchmarks",
+      "to": "entity:genomics-foundation-models",
+      "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:virtual-cell-validation-map::evaluates::entity:virtual-cells",
+      "from": "entity:virtual-cell-validation-map",
+      "type": "evaluates",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/project-ideas.md"
+    },
+    {
+      "id": "entity:virtual-cells::motivates::entity:simulated-nucleus",
+      "from": "entity:virtual-cells",
+      "type": "motivates",
+      "to": "entity:simulated-nucleus",
+      "source": "topics/brief.md"
+    }
+  ],
+  "nodeTypeCounts": {
+    "document": 6,
+    "entity": 32,
+    "source": 13,
+    "topic": 15
+  },
+  "entityTypeCounts": {
+    "Method": 9,
+    "Unspecified": 5,
+    "ProjectIdea": 5,
+    "ResearchTheme": 7,
+    "SystemDesign": 1,
+    "Task": 2,
+    "Venue": 1,
+    "FailureMode": 1,
+    "Benchmark": 1
+  }
+}
