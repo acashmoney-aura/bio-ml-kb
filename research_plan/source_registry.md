@@ -75,3 +75,13 @@ Updated: 2026-06-07
 | Interface modeling | https://arxiv.org/abs/2606.04154 | paper | interaction-first epitope prediction |
 | Structure infrastructure | https://arxiv.org/abs/2606.04566 | paper | throughput acceleration for AF-based PPI screening |
 | Disease modeling | https://arxiv.org/abs/2606.04066 | paper | interpretable tau pathway attribution |
+| RNA methylation foundation model | http://arxiv.org/abs/2606.12219 | paper | weak-to-strong supervision pattern for m6A prediction at scale |
+| Interpretable protein-function features | http://arxiv.org/abs/2606.12209 | paper | sparse autoencoder features for legible enzyme-function prediction |
+| Serial ctDNA change detection | http://arxiv.org/abs/2606.11876 | paper | explicit censored-observation modeling for low-signal longitudinal detection |
+| Multi-task ADME pretraining | http://arxiv.org/abs/2606.11508 | paper | probabilistic objective design for transfer across ADME tasks |
+| Peptide sequencing inference repair | http://arxiv.org/abs/2606.11868 | paper | training-free spectral memory for balancing decoder priors with evidence |
+| Virtual-cell perturbation modeling | https://arxiv.org/abs/2606.12838 | paper | scalable transformer denoising approach to perturbation-response prediction |
+| Structure-guided nanobody design | https://arxiv.org/abs/2606.12772 | paper | differentiable distogram optimization for epitope-targeted design |
+| Genomic priors for personalization | https://arxiv.org/abs/2606.13556 | framework paper | evidence-graded Bayesian genomic priors for physiological interpretation |
+| Likelihood-aware mechanistic learning | https://arxiv.org/abs/2606.13475 | paper | jointly learning biological dynamics and heteroscedastic noise |
+| Protein language model geometry | https://arxiv.org/abs/2606.12609 | paper | probing what representation geometry captures in protein language models |

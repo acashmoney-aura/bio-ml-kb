@@ -1,20 +1,50 @@
 # Markdown graph summary
 
-Generated: 2026-06-07
+Generated: 2026-06-12
 
-- Documents: 9
-- Nodes: 112
-- Edges: 170
+- Documents: 10
+- Nodes: 141
+- Edges: 208
+
+## Node types
+
+- document: 10
+- entity: 73
+- source: 33
+- topic: 25
 
 ## Entity types
 
-- Method: 18
-- ResearchTheme: 10
-- Task: 9
-- ProjectIdea: 7
-- Unspecified: 5
 - Benchmark: 4
-- SystemDesign: 1
-- Venue: 1
 - FailureMode: 1
+- Framework: 1
+- MeasurementModel: 1
+- Method: 26
+- ProjectIdea: 7
+- ResearchTheme: 12
+- SystemDesign: 1
+- Task: 9
+- Unspecified: 10
+- Venue: 1
 
+## Documents with metadata
+
+- Recent bio-ML priors, noise models, and virtual-cell interfaces (synthesis-note) — 14 entities, 8 relations, 10 sources — topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md
+- Structure-aware biological ML (synthesis-note) — 10 entities, 7 relations, 9 sources — topics/notes/structure-aware-biological-ml.md
+- Project ideas for bio ML and genomics (synthesis-note) — 7 entities, 6 relations, 0 sources — topics/notes/project-ideas.md
+- Structural decision support in biology (synthesis-note) — 10 entities, 5 relations, 5 sources — topics/notes/structural-decision-support.md
+- Virtual cells, interpretable biology models, and genomics ML (synthesis-note) — 8 entities, 5 relations, 4 sources — topics/notes/virtual-cells-and-genomics-ml.md
+- Forward-looking evaluation for biological ML and agents (synthesis-note) — 7 entities, 5 relations, 4 sources — topics/notes/forward-looking-bio-evaluation.md
+- Foundation models and abstraction boundaries in biology (synthesis-note) — 7 entities, 4 relations, 3 sources — topics/notes/foundation-models-and-abstraction-boundaries.md
+- Source Registry (registry) — 10 entities, 3 relations, 0 sources — research_plan/source_registry.md
+- Bio ML KB Brief (brief) — 7 entities, 3 relations, 0 sources — topics/brief.md
+- Current Plan (plan) — 4 entities, 1 relations, 0 sources — research_plan/current_plan.md
+
+## Output files
+
+- `research_plan/graph/graph.json`
+- `research_plan/graph/graph.mmd`
+- `research_plan/graph/summary.md`
+- `docs/data/graph.json`
+- `docs/data/graph.mmd`
+- `docs/data/documents.json`

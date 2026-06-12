@@ -1,0 +1,323 @@
+{
+  "generatedAt": "2026-06-12",
+  "documents": [
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "slug": "topics-notes-recent-bio-ml-priors-noise-and-virtual-cells-md",
+      "title": "Recent bio-ML priors, noise models, and virtual-cell interfaces",
+      "kind": "synthesis-note",
+      "path": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "updated": "2026-06-12",
+      "topics": [
+        "computational-biology",
+        "genomics",
+        "biological-ml",
+        "virtual-cells",
+        "protein-design",
+        "measurement-modeling"
+      ],
+      "entities": [
+        "m6A-FORM",
+        "sparse autoencoder enzyme features",
+        "Span Detector",
+        "probabilistic contrastive ADME pretraining",
+        "MemNovo",
+        "OCOO-T",
+        "EasyNano",
+        "genomically-anchored personalized interpretation",
+        "likelihood-aware BINNs",
+        "protein language model geometry",
+        "structure-aware biological ML",
+        "virtual cells",
+        "genomic priors",
+        "heteroscedastic noise"
+      ],
+      "sources": [
+        "http://arxiv.org/abs/2606.12219",
+        "http://arxiv.org/abs/2606.12209",
+        "http://arxiv.org/abs/2606.11876",
+        "http://arxiv.org/abs/2606.11508",
+        "http://arxiv.org/abs/2606.11868",
+        "https://arxiv.org/abs/2606.12838",
+        "https://arxiv.org/abs/2606.12772",
+        "https://arxiv.org/abs/2606.13556",
+        "https://arxiv.org/abs/2606.13475",
+        "https://arxiv.org/abs/2606.12609"
+      ],
+      "excerpt": "Recent bio-ML priors, noise models, and virtual-cell interfaces Updated: 2026-06-12 Core thesis The newest comp-bio digests keep converging on the same deeper idea: the most interesting progress is coming from better scientific interfaces, not just larger black-box models. Those…",
+      "body": "Recent bio-ML priors, noise models, and virtual-cell interfaces\n\nUpdated: 2026-06-12\n\nCore thesis\n\nThe newest comp-bio digests keep converging on the same deeper idea: the most interesting progress is coming from better scientific interfaces, not just larger black-box models.\n\nThose interfaces include:\n• weak-to-strong supervision pipelines,\n• explicit modeling of censored or noisy measurements,\n• biological priors that can be inspected,\n• structure-guided generation,\n• and virtual-cell systems built from simpler, more scalable abstractions rather than ornate but brittle architecture tricks.\n\nThe recurring patterns\n\nRespect label quality and supervision hierarchy\nm6A-FORM is a strong example of this pattern. It uses broad noisy methylation signal for representation learning, then sharpens with higher-confidence site-level labels.\n\nWhy this matters:\n• many genomics problems have exactly this structure\n• pretending all biological labels are equally reliable is often a mistake\n• the design pattern is reusable well beyond methylation\n\nThis fits Akash's broader taste for systems that separate cheap broad signal from expensive clean signal.\n\nSimpler virtual-cell architectures may scale better than ornate ones\nOCOO-T is one of the clearest recent virtual-cell papers because it makes a strong case for a simpler Transformer denoising setup that directly handles continuous expression profiles and perturbation context.\n\nImportant takeaway:\n• a strong virtual-cell system may come from clean scalable design, not only specialized latent gadgets\n• benchmark wins still do not prove causal regulatory understanding\n• but the result is still a meaningful step toward practical perturbation-response prediction\n\nThat makes virtual cells feel more like a systems-engineering problem than a hunt for one magical biological architecture.\n\nMeasurement-process modeling is a real advantage, not an academic footnote\nThe Span Detector, likelihood-aware BINNs, and MemNovo all reinforce the same lesson: a lot of biological ML errors come from bad assumptions about what the measurement process looks like.\n\n• Span Detector explicitly models left-censored serial ctDNA observations.\n• likelihood-aware BINNs jointly learn dynamics and heteroscedastic noise.\n• MemNovo shows that peptide-sequencing decoders can fail because they lose access to the right physical evidence during inference.\n\nThis is one of the clearest through-lines from the recent emails: if the noise or observation process has structure, the model should expose it instead of hiding it under convenience assumptions.\n\nInterpretability gets more useful when it maps to real structure\nThe sparse-autoencoder enzyme-function paper and the protein-language-model geometry paper both matter because they try to make model internals scientifically inspectable.\n\nWhy this matters:\n• performance alone is not enough for discovery credibility\n• interpretable latent structure may be one of the few ways to make foundation-style bio models genuinely reusable for reasoning\n• representation geometry can help explain what the model organizes, not just what score it gets\n\nStructural generation is still more believable than unconstrained generation\nEasyNano stands out because it optimizes against explicit structural signals for a narrow, practical design task: epitope-targeted nanobody generation.\n\nThat feels more believable than broad claims about unconstrained protein generation because the optimization target is clear and biologically grounded.\n\nPersonalized biological AI should separate baseline from deviation\nThe genomically-anchored Bayesian personalization framework is notable mostly because it is careful. It treats the genome as an evidence-graded prior for expected physiological baselines, then lets personal data override that prior over time.\n\nThis matters because a personalized system is much more useful when it can distinguish:\n• constitutional baseline,\n• current deviation,\n• and uncertainty about both.\n\nMulti-task molecular modeling benefits from cleaner objective design\nThe ADME pretraining paper is a useful reminder that in bio-ML, objective design often matters as much as model architecture. Combining reconstruction, contrastive learning, and chemistry-specific self-supervision inside one probabilistic framework is a more mature move than stacking arbitrary auxiliary losses.\n\nStrong opinion\n\nThe recent comp-bio emails strengthen a repo-level worldview:\n\nThe best biological ML work is increasingly about making priors, noise, structure, and evidence pathways explicit.\n\nThat is good news for this knowledge base because it means the most interesting reading is not random model churn. It clusters around themes that can become durable project directions:\n• virtual cells with honest validation boundaries,\n• structure-aware generative design,\n• measurement-aware clinical modeling,\n• interpretable representation analysis,\n• and decision-support systems that reveal what prior information they are using.\n\nPractical project ideas that got sharper\n\nBiological-priors benchmark\nCompare when genomic priors, structural priors, and explicit noise models actually improve robustness enough to justify added complexity.\n\nVirtual-cell validation map\nBuild a framework for what should count as convincing validation in perturbation-response systems: transfer, causal usefulness, pathway consistency, and experimental alignment.\n\nMeasurement-aware bio-ML workbench\nCreate a benchmark where the main variable is not architecture size but how honestly the system models censoring, intermittency, weak labels, or structured noise.\n\nInterpretable latent-structure map\nTrack which biological tasks benefit most from sparse features, geometry probes, or representation-level diagnostics rather than pure end-task accuracy.\n\nImmediate next questions\n\n• Which recent methods are most reproducible from public code and datasets?\n• Where do genomic priors help in practice rather than just conceptually?\n• What is the cleanest student-scale project at the intersection of virtual cells, uncertainty, and evaluation?\n• How should this repo distinguish papers that improve biological decision quality from papers that only improve benchmark interpolation?"
+    },
+    {
+      "id": "doc:topics/brief.md",
+      "slug": "topics-brief-md",
+      "title": "Bio ML KB Brief",
+      "kind": "brief",
+      "path": "topics/brief.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "computational-biology",
+        "genomics",
+        "biological-ml",
+        "virtual-cells",
+        "project-ideas"
+      ],
+      "entities": [
+        "virtual cells",
+        "genomics foundation models",
+        "spatial single-cell reconstruction",
+        "protein design",
+        "structure-aware biological ML",
+        "simulated nucleus",
+        "Kwan Lab-adjacent ideas"
+      ],
+      "sources": [],
+      "excerpt": "Bio ML KB Brief This repo is a durable systems map for the parts of computational biology that feel most aligned with Akash's interests: genomics, biological ML, mechanistic or interpretable modeling, virtual-cell directions, and project ideas that connect reading to actual work.…",
+      "body": "Bio ML KB Brief\n\nThis repo is a durable systems map for the parts of computational biology that feel most aligned with Akash's interests: genomics, biological ML, mechanistic or interpretable modeling, virtual-cell directions, and project ideas that connect reading to actual work.\n\nThe goal is not just to bookmark papers. It is to keep a high-signal map of:\n• what technical directions are real\n• which ideas are hype versus solid method shifts\n• which topics could turn into strong student projects\n• how comp bio and AI systems work can connect in a concrete way"
+    },
+    {
+      "id": "doc:research_plan/current_plan.md",
+      "slug": "research-plan-current-plan-md",
+      "title": "Current Plan",
+      "kind": "plan",
+      "path": "research_plan/current_plan.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "planning",
+        "graph-building",
+        "comp-bio"
+      ],
+      "entities": [
+        "markdown metadata graph",
+        "virtual cells",
+        "structure-aware biological ML",
+        "project ideas"
+      ],
+      "sources": [],
+      "excerpt": "Current Plan Objective Build a durable computational-biology knowledge base around genomics, biological ML, virtual-cell directions, and high-upside project ideas. Current focus Seed the repo with notes derived from existing comp-bio digest work. Preserve those notes in markdown…",
+      "body": "Current Plan\n\nObjective\nBuild a durable computational-biology knowledge base around genomics, biological ML, virtual-cell directions, and high-upside project ideas.\n\nCurrent focus\nSeed the repo with notes derived from existing comp-bio digest work.\nPreserve those notes in markdown with graph-friendly metadata.\nBuild a queryable graph artifact from markdown rather than waiting for full ontology setup.\nKeep the structure clean enough that future daily bio updates can slot in easily.\nExpand coverage beyond starter themes into honest evaluation, abstraction-boundary questions, and structure-based decision support."
+    },
+    {
+      "id": "doc:topics/notes/forward-looking-bio-evaluation.md",
+      "slug": "topics-notes-forward-looking-bio-evaluation-md",
+      "title": "Forward-looking evaluation for biological ML and agents",
+      "kind": "synthesis-note",
+      "path": "topics/notes/forward-looking-bio-evaluation.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "evaluation",
+        "protein-design",
+        "agents",
+        "wet-lab-relevance"
+      ],
+      "entities": [
+        "TadA-Bench",
+        "AgentPLM",
+        "PROBE",
+        "SILO",
+        "future-round discovery",
+        "finite-budget evaluation",
+        "wet-lab replay benchmarks"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2606.02624",
+        "https://arxiv.org/abs/2606.02386",
+        "https://arxiv.org/abs/2606.00555",
+        "https://arxiv.org/abs/2605.26690"
+      ],
+      "excerpt": "Forward-looking evaluation for biological ML and agents Core thesis A lot of biological ML still gets overpraised for interpolation on static datasets. The more honest question is whether a model helps with the next experimental decision under time, chronology, and budget constra…",
+      "body": "Forward-looking evaluation for biological ML and agents\n\nCore thesis\n\nA lot of biological ML still gets overpraised for interpolation on static datasets. The more honest question is whether a model helps with the next experimental decision under time, chronology, and budget constraints.\n\nWhy this note exists\n\nThis repo should not confuse:\n• fitting a benchmark split\n• with helping future wet-lab discovery\n\nThat distinction matters a lot in protein engineering and agentic biological systems.\n\nThe main examples\n\nTadA-Bench\nThis is one of the most useful benchmark ideas in the whole space because it preserves the chronology of a real directed-evolution campaign. It asks whether a system trained on earlier rounds can actually rank variants from later rounds.\n\nSILO\nSILO reinforces the point that biological optimization often depends more on how you spend expensive evaluations than on having the fanciest generator.\n\nAgentPLM and PROBE\nThese systems are interesting because they behave more like tool-using scientific workflows. But that only matters if evaluation reflects real decision pressure rather than static iid splits.\n\nPractical takeaway\n\nFor this knowledge base, any future biological-agent or protein-design note should be tagged not just by task, but by evaluation honesty:\n• random split\n• temporal split\n• future-round replay\n• finite-budget discovery"
+    },
+    {
+      "id": "doc:topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "slug": "topics-notes-foundation-models-and-abstraction-boundaries-md",
+      "title": "Foundation models and abstraction boundaries in biology",
+      "kind": "synthesis-note",
+      "path": "topics/notes/foundation-models-and-abstraction-boundaries.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "genomics",
+        "foundation-models",
+        "evaluation",
+        "tokenization"
+      ],
+      "entities": [
+        "Evo 2",
+        "GENEB",
+        "LDARNet",
+        "genomic foundation models",
+        "abstraction boundary",
+        "adaptive tokenization",
+        "representation benchmarking"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://arxiv.org/abs/2606.04525",
+        "https://arxiv.org/abs/2606.04552"
+      ],
+      "excerpt": "Foundation models and abstraction boundaries in biology Core thesis Big biological foundation models are interesting, but the real question is what abstraction level they make scientifically useful. Scale matters less if the model cannot support the right downstream reasoning tas…",
+      "body": "Foundation models and abstraction boundaries in biology\n\nCore thesis\n\nBig biological foundation models are interesting, but the real question is what abstraction level they make scientifically useful. Scale matters less if the model cannot support the right downstream reasoning task.\n\nKey pieces\n\nEvo 2\nEvo 2 is the scale story: broad biological coverage, very long context, and the promise of a general substrate for genome-scale reasoning. The important question is not just whether it is large, but whether it helps with concrete tasks like variant interpretation or regulatory modeling.\n\nGENEB\nGENEB is valuable because it pushes back on sloppy leaderboard culture. If model rankings flip depending on task family, then a single \"best genomic model\" headline is mostly fake precision.\n\nLDARNet\nLDARNet is a good reminder that tokenization is not a neutral preprocessing choice. In genomics, fixed sequence chunks are convenient for models but not necessarily biologically faithful.\n\nWhy this matters\n\nThis cluster is useful because it frames a sharper comp-bio question: when should the unit of reasoning be a base, motif, token, region, isoform, or larger genomic context? That is exactly the kind of systems-level modeling question worth tracking."
+    },
+    {
+      "id": "doc:topics/notes/project-ideas.md",
+      "slug": "topics-notes-project-ideas-md",
+      "title": "Project ideas for bio ML and genomics",
+      "kind": "synthesis-note",
+      "path": "topics/notes/project-ideas.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "project-ideas",
+        "biological-ml",
+        "genomics",
+        "systems-biology"
+      ],
+      "entities": [
+        "simulated nucleus",
+        "structure-aware biological ML benchmark",
+        "virtual-cell validation map",
+        "experiment-aware bio agents",
+        "Kwan Lab-adjacent ideas",
+        "future-round biology evaluation harness",
+        "representation-boundary benchmark"
+      ],
+      "sources": [],
+      "excerpt": "Project ideas for bio ML and genomics Simulated nucleus A sharper version of the virtual-cell idea: focus on one subproblem around regulatory state, chromatin organization, or perturbation response, and make it explicit what is being simulated and what measurement would validate…",
+      "body": "Project ideas for bio ML and genomics\n\nSimulated nucleus\nA sharper version of the virtual-cell idea: focus on one subproblem around regulatory state, chromatin organization, or perturbation response, and make it explicit what is being simulated and what measurement would validate it.\n\nStructure-aware biological ML benchmark\nCompare different ways of injecting scientific structure:\n• symbolic priors\n• geometric priors\n• latent semantic objectives\n• experiment-constrained generation\n• better null models\n\nThe goal would be to measure where structure buys interpretability, robustness, or transfer.\n\nVirtual-cell validation map\nBuild a map of what counts as validation in virtual-cell research:\n• perturbation prediction\n• pathway agreement\n• tissue transfer\n• wet-lab alignment\n• causal usefulness versus descriptive fit\n\nExperiment-aware bio agents\nA serious version of \"agents for biology\" would not just summarize papers. It would propose hypotheses, tie them to candidate experiments, and track what evidence would falsify them.\n\nFuture-round biology evaluation harness\nBuild a benchmark suite for biological systems that asks whether models improve future experimental decisions instead of just random-split interpolation.\n\nRepresentation-boundary benchmark\nCompare where different abstraction levels help most:\n• token or base-level modeling\n• motif-level reasoning\n• isoform-aware structure views\n• interaction-level and interface-level prediction"
+    },
+    {
+      "id": "doc:research_plan/source_registry.md",
+      "slug": "research-plan-source-registry-md",
+      "title": "Source Registry",
+      "kind": "registry",
+      "path": "research_plan/source_registry.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "sources",
+        "computational-biology",
+        "genomics"
+      ],
+      "entities": [
+        "VCWorld",
+        "AnnotateMissense",
+        "MLGenX",
+        "BIRDNet",
+        "GEARS",
+        "SILO",
+        "AIMS-Fold",
+        "ViroBench",
+        "JEPA-DNA",
+        "SC-TauPath"
+      ],
+      "sources": [],
+      "excerpt": "Source Registry Updated: 2026-06-07 Bucket Source Type Why it matters --- --- --- --- Virtual cells https://arxiv.org/abs/2512.00306 paper mechanistic virtual-cell direction Virtual cells https://www.nature.com/articles/s41746-025-02198-6 review field map and validation bottlenec…",
+      "body": "Source Registry\n\nUpdated: 2026-06-07\n\n  Bucket   Source   Type   Why it matters  \n --- --- --- --- \n  Virtual cells   https://arxiv.org/abs/2512.00306   paper   mechanistic virtual-cell direction  \n  Virtual cells   https://www.nature.com/articles/s41746-025-02198-6   review   field map and validation bottlenecks  \n  Genomics   https://www.biorxiv.org/content/10.64898/2026.05.03.722489v1.full.pdf   paper   missense variant prediction framing  \n  Bio-ML systems   https://arxiv.org/abs/2605.28739   paper   interpretable symbolic priors in omics ML  \n  Spatial omics   https://arxiv.org/abs/2605.28200   paper   geometry-first spatial reconstruction  \n  Protein design   https://arxiv.org/abs/2605.26690   paper   budget-aware biological search  \n  Protein design eval   https://arxiv.org/abs/2606.02624   benchmark   chronological replay benchmark for future-round discovery  \n  Agentic protein design   https://arxiv.org/abs/2606.02386   paper   tool-using protein design workflow  \n  Molecular optimization   https://arxiv.org/abs/2606.00555   paper   probing-guided structure-based optimization  \n  Protein structure   https://arxiv.org/abs/2605.26192   paper   experiment-guided folding  \n  Viral genomics   https://arxiv.org/abs/2605.25388   benchmark   reality check for nucleotide FMs  \n  Genome FMs   https://arxiv.org/abs/2602.17162   paper   predictive latent semantics for DNA  \n  Genome FM eval   https://arxiv.org/abs/2606.04525   benchmark   honest comparison across genomic model families  \n  Genome FM tokenization   https://arxiv.org/abs/2606.04552   paper   learnable tokenization for genomics  \n  Structural decision support   https://arxiv.org/abs/2606.04020   paper   isoform-aware druggability and failure boundaries  \n  Structural decision support   https://arxiv.org/abs/2606.04021   paper   pre-synthesis degradability triage  \n  Interface modeling   https://arxiv.org/abs/2606.04154   paper   interaction-first epitope prediction  \n  Structure infrastructure   https://arxiv.org/abs/2606.04566   paper   throughput acceleration for AF-based PPI screening  \n  Disease modeling   https://arxiv.org/abs/2606.04066   paper   interpretable tau pathway attribution  \n  RNA methylation foundation model   http://arxiv.org/abs/2606.12219   paper   weak-to-strong supervision pattern for m6A prediction at scale  \n  Interpretable protein-function features   http://arxiv.org/abs/2606.12209   paper   sparse autoencoder features for legible enzyme-function prediction  \n  Serial ctDNA change detection   http://arxiv.org/abs/2606.11876   paper   explicit censored-observation modeling for low-signal longitudinal detection  \n  Multi-task ADME pretraining   http://arxiv.org/abs/2606.11508   paper   probabilistic objective design for transfer across ADME tasks  \n  Peptide sequencing inference repair   http://arxiv.org/abs/2606.11868   paper   training-free spectral memory for balancing decoder priors with evidence  \n  Virtual-cell perturbation modeling   https://arxiv.org/abs/2606.12838   paper   scalable transformer denoising approach to perturbation-response prediction  \n  Structure-guided nanobody design   https://arxiv.org/abs/2606.12772   paper   differentiable distogram optimization for epitope-targeted design  \n  Genomic priors for personalization   https://arxiv.org/abs/2606.13556   framework paper   evidence-graded Bayesian genomic priors for physiological interpretation  \n  Likelihood-aware mechanistic learning   https://arxiv.org/abs/2606.13475   paper   jointly learning biological dynamics and heteroscedastic noise  \n  Protein language model geometry   https://arxiv.org/abs/2606.12609   paper   probing what representation geometry captures in protein language models"
+    },
+    {
+      "id": "doc:topics/notes/structural-decision-support.md",
+      "slug": "topics-notes-structural-decision-support-md",
+      "title": "Structural decision support in biology",
+      "kind": "synthesis-note",
+      "path": "topics/notes/structural-decision-support.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "structure-biology",
+        "druggability",
+        "degradability",
+        "interfaces",
+        "disease-modeling"
+      ],
+      "entities": [
+        "SpliceBind",
+        "DegradoMap",
+        "EpiFormer",
+        "AF_Cache",
+        "SC-TauPath",
+        "isoform-aware druggability",
+        "PROTAC degradability",
+        "epitope prediction",
+        "pathway attribution",
+        "workflow throughput"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2606.04020",
+        "https://arxiv.org/abs/2606.04021",
+        "https://arxiv.org/abs/2606.04154",
+        "https://arxiv.org/abs/2606.04566",
+        "https://arxiv.org/abs/2606.04066"
+      ],
+      "excerpt": "Structural decision support in biology Core thesis Some of the most believable bio-ML work is not trying to solve biology in one shot. It is trying to improve a concrete structural or translational decision boundary. What makes this category useful These methods are strongest whe…",
+      "body": "Structural decision support in biology\n\nCore thesis\n\nSome of the most believable bio-ML work is not trying to solve biology in one shot. It is trying to improve a concrete structural or translational decision boundary.\n\nWhat makes this category useful\n\nThese methods are strongest when they do one of two things well:\n• improve an early triage decision\n• clarify where the model's own abstraction will fail\n\nExamples\n\nSpliceBind\nThis is especially good because it does more than output a score. It helps separate druggability cases where structural reasoning is relevant from those where the resistance mechanism is structurally invisible.\n\nDegradoMap\nThis hits a realistic bottleneck: deciding whether a target-E3 pairing is promising before expensive chemistry has even happened.\n\nEpiFormer\nA good reminder that if the biology is interaction-first, the architecture probably should be too.\n\nAFCache\nInfrastructure matters. If structure-based screening is too slow, a lot of otherwise-good scientific ideas never become usable workflows.\n\nSC-TauPath\nInterpretability matters most when it becomes anatomically or mechanistically legible, not just cosmetically explainable.\n\nPractical takeaway\n\nThis repo should keep a separate thread for methods that are useful specifically because they sharpen decision support rather than only raising benchmark scores."
+    },
+    {
+      "id": "doc:topics/notes/structure-aware-biological-ml.md",
+      "slug": "topics-notes-structure-aware-biological-ml-md",
+      "title": "Structure-aware biological ML",
+      "kind": "synthesis-note",
+      "path": "topics/notes/structure-aware-biological-ml.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "biological-ml",
+        "interpretability",
+        "spatial-omics",
+        "protein-design",
+        "disease-modeling"
+      ],
+      "entities": [
+        "BIRDNet",
+        "GEARS",
+        "SILO",
+        "AIMS-Fold",
+        "ViroBench",
+        "JEPA-DNA",
+        "SC-TauPath",
+        "null-model bias",
+        "predictive lipidomics acquisition",
+        "structure-aware biological ML"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2605.28739",
+        "https://arxiv.org/abs/2605.28200",
+        "https://arxiv.org/abs/2605.26690",
+        "https://arxiv.org/abs/2605.26192",
+        "https://arxiv.org/abs/2605.25388",
+        "https://arxiv.org/abs/2602.17162",
+        "https://arxiv.org/abs/2606.05196",
+        "https://arxiv.org/abs/2606.05225",
+        "https://arxiv.org/abs/2606.04066"
+      ],
+      "excerpt": "Structure-aware biological ML Thesis A lot of current comp-bio progress is coming from one repeated move: forcing the model to respect a meaningful scientific structure instead of treating biology as just another sequence or table dataset. The recurring patterns Symbolic or rule…",
+      "body": "Structure-aware biological ML\n\nThesis\n\nA lot of current comp-bio progress is coming from one repeated move: forcing the model to respect a meaningful scientific structure instead of treating biology as just another sequence or table dataset.\n\nThe recurring patterns\n\nSymbolic or rule-like structure\nBIRDNet is a clean example: the model architecture itself is shaped by interpretable implication structure rather than explanations being pasted on afterward.\n\nGeometry and tissue organization\nGEARS is interesting because it treats spatial reconstruction as geometry recovery, which feels like a better object than naive spot deconvolution.\n\nBudget-aware search in biology\nSILO is a reminder that in protein design, the bottleneck is often how intelligently you spend expensive oracle evaluations.\n\nExperiment-constrained generation\nAIMS-Fold is a very believable hybrid direction: use generative priors, but steer them with real structural proteomics signals.\n\nBetter evaluation culture\nViroBench matters because nucleotide model fluency is not the same as biological validity or robustness under shift.\n\nPractical takeaway\n\nThe strongest projects in this space may come less from scaling models and more from choosing the right scientific structure to encode."
+    },
+    {
+      "id": "doc:topics/notes/virtual-cells-and-genomics-ml.md",
+      "slug": "topics-notes-virtual-cells-and-genomics-ml-md",
+      "title": "Virtual cells, interpretable biology models, and genomics ML",
+      "kind": "synthesis-note",
+      "path": "topics/notes/virtual-cells-and-genomics-ml.md",
+      "updated": "2026-06-07",
+      "topics": [
+        "virtual-cells",
+        "genomics",
+        "biological-ml",
+        "mechanistic-modeling"
+      ],
+      "entities": [
+        "VCWorld",
+        "virtual cells",
+        "mechanistic simulation",
+        "AnnotateMissense",
+        "missense variant prediction",
+        "MLGenX",
+        "lab-in-the-loop agents",
+        "simulated nucleus"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2512.00306",
+        "https://www.nature.com/articles/s41746-025-02198-6",
+        "https://www.biorxiv.org/content/10.64898/2026.05.03.722489v1.full.pdf",
+        "https://iclr.cc/virtual/2026/workshop/10000787"
+      ],
+      "excerpt": "Virtual cells, interpretable biology models, and genomics ML Core view The most interesting biology-AI work is getting more mechanistic. The shift is away from \"fit a predictor to a giant omics table\" and toward systems that try to preserve pathways, perturbation structure, cellu…",
+      "body": "Virtual cells, interpretable biology models, and genomics ML\n\nCore view\n\nThe most interesting biology-AI work is getting more mechanistic. The shift is away from \"fit a predictor to a giant omics table\" and toward systems that try to preserve pathways, perturbation structure, cellular state transitions, or experimental feedback.\n\nImportant pieces\n\nVCWorld\nVCWorld is compelling because it tries to make virtual-cell modeling more like a stepwise simulator than a black-box endpoint predictor. That matters if the goal is scientific trust rather than just benchmark score.\n\nAnnotateMissense\nMissense prediction remains one of the clearest bridges between genome sequence and real phenotype interpretation. It is practical, legible, and directly useful for disease interpretation workflows.\n\nMLGenX\nThe big signal here is not one paper. It is the direction: AI systems in biology are moving toward closed-loop workflows where models propose, reason, and then get corrected by experiments.\n\nWhy this matters for Akash\n\nThis cluster is especially relevant because it sits right at the intersection of:\n• genomics as structured information\n• biological ML that needs interpretability\n• systems thinking rather than one-off predictors\n• possible future work around a simulated nucleus or virtual-cell-style project"
+    }
+  ]
+}

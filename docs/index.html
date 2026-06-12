@@ -4,21 +4,396 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bio ML Knowledge Base</title>
+  <meta name="description" content="Browsable GitHub Pages UI for the bio ML and genomics knowledge base.">
   <style>
-    :root{--bg:#06131c;--panel:#0f1d2b;--panel2:#13273a;--text:#eef8ff;--muted:#a9c1d6;--accent:#6ee7b7;--accent2:#60a5fa;--border:rgba(255,255,255,.08);--max:1180px}
-    *{box-sizing:border-box} body{margin:0;font:16px/1.6 Inter,system-ui,sans-serif;background:linear-gradient(180deg,#071019,#0b1622 100%);color:var(--text)} a{color:var(--accent2)} .wrap{max-width:var(--max);margin:0 auto;padding:28px 20px 72px}.hero{padding:34px 0 22px;border-bottom:1px solid var(--border);margin-bottom:28px}.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:12px}h1{font-size:clamp(34px,7vw,64px);margin:10px 0 12px;line-height:1.1}.lede{font-size:19px;color:var(--muted);max-width:800px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0}.card{background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.18)}.stat{font-size:34px;font-weight:800}.pill{display:inline-block;padding:6px 10px;margin:4px 6px 0 0;border-radius:999px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.18);color:#d8ebff;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.list{padding-left:18px}.muted{color:var(--muted)}@media (max-width:900px){.split{grid-template-columns:1fr}} .footer{margin-top:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:18px}
+    :root {
+      --bg: #07140f;
+      --bg2: #0d2019;
+      --panel: rgba(12, 28, 22, 0.86);
+      --panel-strong: rgba(16, 37, 29, 0.96);
+      --text: #effcf5;
+      --muted: #accdbb;
+      --line: rgba(255,255,255,.09);
+      --green: #6ee7b7;
+      --teal: #5eead4;
+      --blue: #93c5fd;
+      --shadow: 0 18px 60px rgba(0,0,0,.24);
+      --max: 1320px;
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font: 15px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(110,231,183,.12), transparent 28%),
+        radial-gradient(circle at top right, rgba(94,234,212,.08), transparent 24%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+    }
+    a { color: var(--blue); }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 20px 80px; }
+    .hero {
+      padding: 28px 0 26px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 22px;
+      align-items: end;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+    h1, h2, h3 { line-height: 1.1; margin: 0; }
+    h1 { font-size: clamp(36px, 6vw, 66px); margin-bottom: 14px; }
+    h2 { font-size: 22px; margin-bottom: 14px; }
+    h3 { font-size: 16px; margin-bottom: 8px; }
+    .lede {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
+    .hero-card, .card {
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-card { padding: 20px; }
+    .hero-pills, .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(110,231,183,.18);
+      background: rgba(110,231,183,.08);
+      color: #dffef0;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 14px;
+      margin: 10px 0 26px;
+    }
+    .stat-card { padding: 18px; }
+    .stat-value { font-size: 34px; font-weight: 800; letter-spacing: -.03em; }
+    .stat-label { color: var(--muted); }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .section-stack { display: grid; gap: 18px; }
+    .card { padding: 18px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .search {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 13px 15px;
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font: inherit;
+      outline: none;
+    }
+    .search::placeholder { color: #88a796; }
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .filter-chip {
+      cursor: pointer;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font: inherit;
+    }
+    .filter-chip.active { color: var(--text); border-color: rgba(110,231,183,.35); background: rgba(110,231,183,.12); }
+    .doc-grid { display: grid; gap: 12px; }
+    .doc-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      background: rgba(255,255,255,.025);
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .doc-card:hover, .doc-card.active { transform: translateY(-1px); border-color: rgba(110,231,183,.32); background: rgba(110,231,183,.06); }
+    .doc-topline { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+    .kind-badge {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--teal);
+      background: rgba(94,234,212,.08);
+      border: 1px solid rgba(94,234,212,.16);
+      border-radius: 999px;
+      padding: 4px 8px;
+    }
+    .doc-title { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
+    .doc-excerpt, .muted { color: var(--muted); }
+    .tiny { font-size: 12px; color: var(--muted); }
+    .meta-line { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .sidebar-grid { display: grid; gap: 18px; position: sticky; top: 18px; }
+    .detail-body {
+      white-space: pre-wrap;
+      color: #def6e9;
+      max-height: 420px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .list { margin: 0; padding-left: 18px; }
+    .list li { margin-bottom: 7px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .empty {
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px dashed var(--line);
+      color: var(--muted);
+      text-align: center;
+    }
+    .footer { margin-top: 26px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 1080px) {
+      .hero, .layout { grid-template-columns: 1fr; }
+      .sidebar-grid { position: static; }
+    }
+    @media (max-width: 720px) {
+      .stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .toolbar { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-<div class="wrap">
-<section class="hero"><div class="eyebrow">markdown-native graph mode · computational biology</div><h1>Bio ML Knowledge Base</h1><p class="lede">A graph-backed map of genomics, biological ML, virtual-cell ideas, spatial omics, protein design, and comp-bio project directions.</p><div id="pills"></div></section>
-<section class="grid" id="stats"></section>
-<section class="split"><article class="card"><h2>What this repo is for</h2><p class="muted">This is a systems map, not just a pile of links. The graph comes from markdown frontmatter so notes stay easy to edit while methods, themes, tasks, and project ideas become structured.</p></article><article class="card"><h2>Key files</h2><ul class="list"><li><a href="../README.md">README</a></li><li><a href="../topics/brief.md">Brief</a></li><li><a href="../topics/notes/virtual-cells-and-genomics-ml.md">Virtual cells note</a></li><li><a href="../topics/notes/structure-aware-biological-ml.md">Structure-aware bio ML</a></li><li><a href="../topics/notes/project-ideas.md">Project ideas</a></li></ul></article></section>
-<section class="grid"><article class="card"><h2>Entity types</h2><div id="entity-types"></div></article><article class="card"><h2>Top entities</h2><ol class="list" id="entities"></ol></article><article class="card"><h2>Sample relations</h2><ol class="list" id="relations"></ol></article></section>
-<p class="footer" id="footer">Loading graph…</p>
-</div>
-<script>
-(async()=>{const g=await fetch('./data/graph.json',{cache:'no-store'}).then(r=>r.json());const pills=['genomics','biological ML','virtual cells','spatial omics','protein design','project ideas'];document.getElementById('pills').innerHTML=pills.map(x=>`<span class="pill">${x}</span>`).join('');const stats=[['Documents',g.counts.documents],['Nodes',g.counts.nodes],['Edges',g.counts.edges],['Entity types',Object.keys(g.entityTypeCounts||{}).length]];document.getElementById('stats').innerHTML=stats.map(([k,v])=>`<article class="card"><div class="stat">${v}</div><div class="muted">${k}</div></article>`).join('');document.getElementById('entity-types').innerHTML=Object.entries(g.entityTypeCounts||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<span class="pill">${k} · ${v}</span>`).join('');const nodes=new Map((g.nodes||[]).map(n=>[n.id,n]));const entityDegree=new Map();for(const e of g.edges||[]){for(const side of [e.from,e.to]){const n=nodes.get(side);if(n&&n.nodeType==='entity')entityDegree.set(n.label,(entityDegree.get(n.label)||0)+1)}}document.getElementById('entities').innerHTML=Array.from(entityDegree.entries()).sort((a,b)=>b[1]-a[1]).slice(0,12).map(([n,d])=>`<li><strong>${n}</strong> <span class="muted">(${d} links)</span></li>`).join('');document.getElementById('relations').innerHTML=(g.edges||[]).filter(e=>e.from.startsWith('entity:')&&e.to.startsWith('entity:')).slice(0,12).map(e=>`<li><strong>${nodes.get(e.from)?.label||e.from}</strong> <span class="muted">${e.type}</span> <strong>${nodes.get(e.to)?.label||e.to}</strong></li>`).join('');document.getElementById('footer').textContent=`Graph last rebuilt: ${g.generatedAt}`;})();
-</script>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">GitHub Pages · bio ml knowledge base</div>
+        <h1>Bio ML KB</h1>
+        <p class="lede">A cleaner way to move through the genomics, virtual-cell, structure-aware bio-ML, and project-idea notes — without bouncing between raw files.</p>
+        <div class="hero-pills" id="heroPills"></div>
+      </div>
+      <aside class="hero-card">
+        <h3 style="margin-bottom:10px">What’s here</h3>
+        <div class="muted">This site is generated from markdown metadata plus note bodies. You can search themes, inspect recent synthesis notes, and read the actual content directly inside GitHub Pages.</div>
+      </aside>
+    </section>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="layout">
+      <div class="section-stack">
+        <article class="card">
+          <div class="toolbar">
+            <input id="search" class="search" type="search" placeholder="Search notes, priors, methods, entities, or source links…">
+            <div class="tiny" id="resultsMeta"></div>
+          </div>
+          <div class="filter-row" id="kindFilters"></div>
+          <div class="doc-grid" id="docGrid"></div>
+        </article>
+      </div>
+
+      <aside class="sidebar-grid">
+        <article class="card">
+          <h2>Document viewer</h2>
+          <div id="detailPanel" class="muted">Pick a note on the left. The recent priors/noise/virtual-cell synthesis is a good starting point.</div>
+        </article>
+
+        <article class="card">
+          <h2>Top topics</h2>
+          <div class="pills" id="topics"></div>
+        </article>
+
+        <article class="card two-col">
+          <div>
+            <h2>Entity types</h2>
+            <div class="pills" id="entityTypes"></div>
+          </div>
+          <div>
+            <h2>Sample relations</h2>
+            <ol class="list" id="relations"></ol>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <p class="footer" id="footer"></p>
+  </div>
+
+  <script>
+    const state = { kind: 'all', query: '', selectedId: null };
+    const heroTopics = ['genomics', 'virtual cells', 'biological priors', 'measurement-aware ML', 'protein design', 'project ideas'];
+
+    const el = id => document.getElementById(id);
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[ch]));
+    const fmtDate = value => value ? String(value).slice(0, 10) : 'unknown';
+
+    function renderStats(graph, documents) {
+      const items = [
+        ['Documents', graph.counts.documents],
+        ['Nodes', graph.counts.nodes],
+        ['Edges', graph.counts.edges],
+        ['Recent note', fmtDate(documents[0]?.updated)]
+      ];
+      el('stats').innerHTML = items.map(([label, value]) => `
+        <article class="card stat-card">
+          <div class="stat-value">${esc(value)}</div>
+          <div class="stat-label">${esc(label)}</div>
+        </article>`).join('');
+    }
+
+    function renderFilters(documents) {
+      const kinds = ['all', ...Array.from(new Set(documents.map(d => d.kind))).sort()];
+      el('kindFilters').innerHTML = kinds.map(kind => `
+        <button class="filter-chip ${kind === state.kind ? 'active' : ''}" data-kind="${esc(kind)}">${esc(kind)}${kind === 'all' ? '' : ` · ${documents.filter(d => d.kind === kind).length}`}</button>
+      `).join('');
+      el('kindFilters').querySelectorAll('[data-kind]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.kind = btn.dataset.kind;
+          renderFilters(documents);
+          renderDocuments(documents);
+        });
+      });
+    }
+
+    function filteredDocuments(documents) {
+      const q = state.query.trim().toLowerCase();
+      return documents.filter(doc => {
+        if (state.kind !== 'all' && doc.kind !== state.kind) return false;
+        if (!q) return true;
+        const hay = [doc.title, doc.excerpt, doc.body, ...(doc.topics||[]), ...(doc.entities||[]), ...(doc.sources||[])].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+    }
+
+    function renderDocuments(documents) {
+      const filtered = filteredDocuments(documents);
+      el('resultsMeta').textContent = `${filtered.length} result${filtered.length === 1 ? '' : 's'}`;
+      if (!filtered.length) {
+        el('docGrid').innerHTML = '<div class="empty">No notes matched that filter. Try a broader keyword.</div>';
+        return;
+      }
+      if (!state.selectedId || !filtered.some(d => d.id === state.selectedId)) state.selectedId = filtered[0].id;
+      el('docGrid').innerHTML = filtered.map(doc => `
+        <article class="doc-card ${doc.id === state.selectedId ? 'active' : ''}" data-id="${esc(doc.id)}">
+          <div class="doc-topline">
+            <span class="kind-badge">${esc(doc.kind)}</span>
+            <span class="tiny">updated ${esc(fmtDate(doc.updated))}</span>
+          </div>
+          <div class="doc-title">${esc(doc.title)}</div>
+          <div class="doc-excerpt">${esc(doc.excerpt || 'No excerpt available.')}</div>
+          <div class="meta-line">${(doc.topics || []).slice(0, 4).map(topic => `<span class="pill">${esc(topic)}</span>`).join('')}</div>
+        </article>`).join('');
+      el('docGrid').querySelectorAll('[data-id]').forEach(card => {
+        card.addEventListener('click', () => {
+          state.selectedId = card.dataset.id;
+          renderDocuments(documents);
+          renderDetail(documents.find(d => d.id === state.selectedId));
+        });
+      });
+      renderDetail(documents.find(d => d.id === state.selectedId));
+    }
+
+    function renderDetail(doc) {
+      if (!doc) {
+        el('detailPanel').innerHTML = '<div class="muted">No document selected.</div>';
+        return;
+      }
+      el('detailPanel').innerHTML = `
+        <div class="doc-topline" style="margin-bottom:10px">
+          <span class="kind-badge">${esc(doc.kind)}</span>
+          <span class="tiny">${esc(doc.path)}</span>
+        </div>
+        <h3 style="font-size:20px; margin-bottom:10px">${esc(doc.title)}</h3>
+        <div class="pills" style="margin-bottom:12px">${(doc.topics || []).map(topic => `<span class="pill">${esc(topic)}</span>`).join('')}</div>
+        <div class="detail-body">${esc(doc.body || doc.excerpt || 'No body content available.')}</div>
+        <div style="margin-top:14px">
+          <h3>Entities</h3>
+          <div class="pills">${(doc.entities || []).slice(0, 20).map(entity => `<span class="pill">${esc(entity)}</span>`).join('') || '<span class="muted">None listed.</span>'}</div>
+        </div>
+        <div style="margin-top:14px">
+          <h3>Sources</h3>
+          <ol class="list">${(doc.sources || []).map(src => `<li><a href="${esc(src)}" target="_blank" rel="noreferrer">${esc(src)}</a></li>`).join('') || '<li class="muted">No source URLs listed.</li>'}</ol>
+        </div>`;
+    }
+
+    function renderTopics(graph) {
+      const nodes = new Map((graph.nodes || []).map(n => [n.id, n]));
+      const counts = new Map();
+      for (const edge of graph.edges || []) {
+        if (edge.type !== 'has_topic') continue;
+        const label = nodes.get(edge.to)?.label;
+        if (!label) continue;
+        counts.set(label, (counts.get(label) || 0) + 1);
+      }
+      el('topics').innerHTML = Array.from(counts.entries())
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .slice(0, 14)
+        .map(([topic, count]) => `<span class="pill">${esc(topic)} · ${count}</span>`).join('');
+    }
+
+    function renderEntityTypes(graph) {
+      el('entityTypes').innerHTML = Object.entries(graph.entityTypeCounts || {})
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .map(([type, count]) => `<span class="pill">${esc(type)} · ${count}</span>`).join('');
+    }
+
+    function renderRelations(graph) {
+      const nodes = new Map((graph.nodes || []).map(n => [n.id, n]));
+      el('relations').innerHTML = (graph.edges || [])
+        .filter(edge => String(edge.from).startsWith('entity:') && String(edge.to).startsWith('entity:'))
+        .slice(0, 10)
+        .map(edge => `<li><strong>${esc(nodes.get(edge.from)?.label || edge.from)}</strong> <span class="tiny">${esc(edge.type)}</span> <strong>${esc(nodes.get(edge.to)?.label || edge.to)}</strong></li>`)
+        .join('');
+    }
+
+    async function main() {
+      el('heroPills').innerHTML = heroTopics.map(topic => `<span class="pill">${esc(topic)}</span>`).join('');
+      try {
+        const [graph, docsData] = await Promise.all([
+          fetch('./data/graph.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('./data/documents.json', { cache: 'no-store' }).then(r => r.json())
+        ]);
+        const documents = docsData.documents || [];
+        renderStats(graph, documents);
+        renderFilters(documents);
+        renderDocuments(documents);
+        renderTopics(graph);
+        renderEntityTypes(graph);
+        renderRelations(graph);
+        el('footer').textContent = `Last rebuilt ${graph.generatedAt}. GitHub Pages is now serving searchable note content from docs/data/documents.json instead of linking to unpublished markdown paths.`;
+
+        el('search').addEventListener('input', e => {
+          state.query = e.target.value;
+          renderDocuments(documents);
+        });
+      } catch (err) {
+        el('docGrid').innerHTML = `<div class="empty">Could not load site data: ${esc(err)}</div>`;
+        el('footer').textContent = 'Site data failed to load.';
+      }
+    }
+
+    main();
+  </script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-07",
+  "generatedAt": "2026-06-12",
   "counts": {
-    "nodes": 112,
-    "edges": 170,
-    "documents": 9
+    "nodes": 141,
+    "edges": 208,
+    "documents": 10
   },
   "nodes": [
     {
@@ -55,6 +55,14 @@
       "updated": "2026-06-07"
     },
     {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "label": "Recent bio-ML priors, noise models, and virtual-cell interfaces",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "updated": "2026-06-12"
+    },
+    {
       "id": "doc:topics/notes/structural-decision-support.md",
       "label": "Structural decision support in biology",
       "nodeType": "document",
@@ -82,37 +90,43 @@
       "id": "entity:abstraction-boundary",
       "label": "abstraction boundary",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
     },
     {
       "id": "entity:adaptive-tokenization",
       "label": "adaptive tokenization",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:af-cache",
       "label": "AF_Cache",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:agentplm",
       "label": "AgentPLM",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:aims-fold",
       "label": "AIMS-Fold",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:annotatemissense",
       "label": "AnnotateMissense",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:bio-ml-knowledge-base",
@@ -128,37 +142,60 @@
       "id": "entity:birdnet",
       "label": "BIRDNet",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:censored-observations",
+      "label": "censored observations",
+      "nodeType": "entity"
+    },
+    {
+      "id": "entity:controllable-biological-ml",
+      "label": "controllable biological ML",
+      "nodeType": "entity"
     },
     {
       "id": "entity:degradomap",
       "label": "DegradoMap",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:easynano",
+      "label": "EasyNano",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:epiformer",
       "label": "EpiFormer",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:epitope-prediction",
       "label": "epitope prediction",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:evo-2",
       "label": "Evo 2",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:experiment-aware-bio-agents",
       "label": "experiment-aware bio agents",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
     },
     {
       "id": "entity:experimental-data",
@@ -174,169 +211,265 @@
       "id": "entity:finite-budget-evaluation",
       "label": "finite-budget evaluation",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:future-round-biology-evaluation-harness",
       "label": "future-round biology evaluation harness",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
     },
     {
       "id": "entity:future-round-discovery",
       "label": "future-round discovery",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:gears",
       "label": "GEARS",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:geneb",
       "label": "GENEB",
       "nodeType": "entity",
-      "entityType": "Benchmark"
+      "entityType": "Benchmark",
+      "status": null
     },
     {
       "id": "entity:genomic-foundation-models",
       "label": "genomic foundation models",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
+      "id": "entity:genomic-priors",
+      "label": "genomic priors",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
+      "id": "entity:genomically-anchored-personalized-interpretation",
+      "label": "genomically-anchored personalized interpretation",
+      "nodeType": "entity",
+      "entityType": "Framework",
+      "status": null
     },
     {
       "id": "entity:genomics-foundation-models",
       "label": "genomics foundation models",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
+      "id": "entity:heteroscedastic-noise",
+      "label": "heteroscedastic noise",
+      "nodeType": "entity",
+      "entityType": "MeasurementModel",
+      "status": null
+    },
+    {
+      "id": "entity:interpretability",
+      "label": "interpretability",
+      "nodeType": "entity"
     },
     {
       "id": "entity:isoform-aware-druggability",
       "label": "isoform-aware druggability",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:jepa-dna",
       "label": "JEPA-DNA",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:kwan-lab-adjacent-ideas",
       "label": "Kwan Lab-adjacent ideas",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
     },
     {
       "id": "entity:lab-in-the-loop-agents",
       "label": "lab-in-the-loop agents",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
     },
     {
       "id": "entity:ldarnet",
       "label": "LDARNet",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:likelihood-aware-binns",
+      "label": "likelihood-aware BINNs",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:m6a-form",
+      "label": "m6A-FORM",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:markdown-metadata-graph",
       "label": "markdown metadata graph",
       "nodeType": "entity",
-      "entityType": "SystemDesign"
+      "entityType": "SystemDesign",
+      "status": null
     },
     {
       "id": "entity:mechanistic-simulation",
       "label": "mechanistic simulation",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:memnovo",
+      "label": "MemNovo",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:missense-variant-prediction",
       "label": "missense variant prediction",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:mlgenx",
       "label": "MLGenX",
       "nodeType": "entity",
-      "entityType": "Venue"
+      "entityType": "Venue",
+      "status": null
     },
     {
       "id": "entity:null-model-bias",
       "label": "null-model bias",
       "nodeType": "entity",
-      "entityType": "FailureMode"
+      "entityType": "FailureMode",
+      "status": null
+    },
+    {
+      "id": "entity:ocoo-t",
+      "label": "OCOO-T",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:pathway-attribution",
       "label": "pathway attribution",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:predictive-lipidomics-acquisition",
       "label": "predictive lipidomics acquisition",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
+    },
+    {
+      "id": "entity:probabilistic-contrastive-adme-pretraining",
+      "label": "probabilistic contrastive ADME pretraining",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:probe",
       "label": "PROBE",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:project-ideas",
       "label": "project ideas",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
     },
     {
       "id": "entity:protac-degradability",
       "label": "PROTAC degradability",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:protein-design",
       "label": "protein design",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
+      "id": "entity:protein-language-model-geometry",
+      "label": "protein language model geometry",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme",
+      "status": null
     },
     {
       "id": "entity:representation-benchmarking",
       "label": "representation benchmarking",
       "nodeType": "entity",
-      "entityType": "Task"
+      "entityType": "Task",
+      "status": null
     },
     {
       "id": "entity:representation-boundary-benchmark",
       "label": "representation-boundary benchmark",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
     },
     {
       "id": "entity:sc-taupath",
       "label": "SC-TauPath",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:silo",
       "label": "SILO",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:simulated-nucleus",
       "label": "simulated nucleus",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
     },
     {
       "id": "entity:source-registry",
@@ -344,70 +477,135 @@
       "nodeType": "entity"
     },
     {
+      "id": "entity:span-detector",
+      "label": "Span Detector",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:sparse-autoencoder-enzyme-features",
+      "label": "sparse autoencoder enzyme features",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
+    },
+    {
       "id": "entity:spatial-single-cell-reconstruction",
       "label": "spatial single-cell reconstruction",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
     },
     {
       "id": "entity:splicebind",
       "label": "SpliceBind",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:structure-aware-biological-ml",
       "label": "structure-aware biological ML",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
     },
     {
       "id": "entity:structure-aware-biological-ml-benchmark",
       "label": "structure-aware biological ML benchmark",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
+    },
+    {
+      "id": "entity:structure-guided-generation",
+      "label": "structure-guided generation",
+      "nodeType": "entity"
     },
     {
       "id": "entity:tada-bench",
       "label": "TadA-Bench",
       "nodeType": "entity",
-      "entityType": "Benchmark"
+      "entityType": "Benchmark",
+      "status": null
     },
     {
       "id": "entity:vcworld",
       "label": "VCWorld",
       "nodeType": "entity",
-      "entityType": "Method"
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:virobench",
       "label": "ViroBench",
       "nodeType": "entity",
-      "entityType": "Benchmark"
+      "entityType": "Benchmark",
+      "status": null
     },
     {
       "id": "entity:virtual-cell-validation-map",
       "label": "virtual-cell validation map",
       "nodeType": "entity",
-      "entityType": "ProjectIdea"
+      "entityType": "ProjectIdea",
+      "status": null
     },
     {
       "id": "entity:virtual-cells",
       "label": "virtual cells",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
+      "id": "entity:weak-to-strong-supervision",
+      "label": "weak-to-strong supervision",
+      "nodeType": "entity"
     },
     {
       "id": "entity:wet-lab-replay-benchmarks",
       "label": "wet-lab replay benchmarks",
       "nodeType": "entity",
-      "entityType": "Benchmark"
+      "entityType": "Benchmark",
+      "status": null
     },
     {
       "id": "entity:workflow-throughput",
       "label": "workflow throughput",
       "nodeType": "entity",
-      "entityType": "ResearchTheme"
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
+      "id": "source:http-arxiv-org-abs-2606-11508",
+      "label": "http://arxiv.org/abs/2606.11508",
+      "nodeType": "source",
+      "url": "http://arxiv.org/abs/2606.11508"
+    },
+    {
+      "id": "source:http-arxiv-org-abs-2606-11868",
+      "label": "http://arxiv.org/abs/2606.11868",
+      "nodeType": "source",
+      "url": "http://arxiv.org/abs/2606.11868"
+    },
+    {
+      "id": "source:http-arxiv-org-abs-2606-11876",
+      "label": "http://arxiv.org/abs/2606.11876",
+      "nodeType": "source",
+      "url": "http://arxiv.org/abs/2606.11876"
+    },
+    {
+      "id": "source:http-arxiv-org-abs-2606-12209",
+      "label": "http://arxiv.org/abs/2606.12209",
+      "nodeType": "source",
+      "url": "http://arxiv.org/abs/2606.12209"
+    },
+    {
+      "id": "source:http-arxiv-org-abs-2606-12219",
+      "label": "http://arxiv.org/abs/2606.12219",
+      "nodeType": "source",
+      "url": "http://arxiv.org/abs/2606.12219"
     },
     {
       "id": "source:https-arxiv-org-abs-2512-00306",
@@ -524,6 +722,36 @@
       "url": "https://arxiv.org/abs/2606.05225"
     },
     {
+      "id": "source:https-arxiv-org-abs-2606-12609",
+      "label": "https://arxiv.org/abs/2606.12609",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.12609"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-12772",
+      "label": "https://arxiv.org/abs/2606.12772",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.12772"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-12838",
+      "label": "https://arxiv.org/abs/2606.12838",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.12838"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-13475",
+      "label": "https://arxiv.org/abs/2606.13475",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.13475"
+    },
+    {
+      "id": "source:https-arxiv-org-abs-2606-13556",
+      "label": "https://arxiv.org/abs/2606.13556",
+      "nodeType": "source",
+      "url": "https://arxiv.org/abs/2606.13556"
+    },
+    {
       "id": "source:https-iclr-cc-virtual-2026-workshop-10000787",
       "label": "https://iclr.cc/virtual/2026/workshop/10000787",
       "nodeType": "source",
@@ -610,6 +838,11 @@
     {
       "id": "topic:interpretability",
       "label": "interpretability",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:measurement-modeling",
+      "label": "measurement-modeling",
       "nodeType": "topic"
     },
     {
@@ -1174,6 +1407,216 @@
       "source": "topics/notes/project-ideas.md"
     },
     {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:http-arxiv-org-abs-2606-11508",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:http-arxiv-org-abs-2606-11508",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:http-arxiv-org-abs-2606-11868",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:http-arxiv-org-abs-2606-11868",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:http-arxiv-org-abs-2606-11876",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:http-arxiv-org-abs-2606-11876",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:http-arxiv-org-abs-2606-12209",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:http-arxiv-org-abs-2606-12209",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:http-arxiv-org-abs-2606-12219",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:http-arxiv-org-abs-2606-12219",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:https-arxiv-org-abs-2606-12609",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-12609",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:https-arxiv-org-abs-2606-12772",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-12772",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:https-arxiv-org-abs-2606-12838",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-12838",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:https-arxiv-org-abs-2606-13475",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-13475",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::cites::source:https-arxiv-org-abs-2606-13556",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "cites",
+      "to": "source:https-arxiv-org-abs-2606-13556",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::has_topic::topic:biological-ml",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "has_topic",
+      "to": "topic:biological-ml",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::has_topic::topic:computational-biology",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "has_topic",
+      "to": "topic:computational-biology",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::has_topic::topic:genomics",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::has_topic::topic:measurement-modeling",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "has_topic",
+      "to": "topic:measurement-modeling",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::has_topic::topic:protein-design",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "has_topic",
+      "to": "topic:protein-design",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::has_topic::topic:virtual-cells",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "has_topic",
+      "to": "topic:virtual-cells",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:easynano",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:easynano",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:genomic-priors",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:genomic-priors",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:genomically-anchored-personalized-interpretation",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:genomically-anchored-personalized-interpretation",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:heteroscedastic-noise",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:heteroscedastic-noise",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:likelihood-aware-binns",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:likelihood-aware-binns",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:m6a-form",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:m6a-form",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:memnovo",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:memnovo",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:ocoo-t",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:ocoo-t",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:probabilistic-contrastive-adme-pretraining",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:probabilistic-contrastive-adme-pretraining",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:protein-language-model-geometry",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:protein-language-model-geometry",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:span-detector",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:span-detector",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:sparse-autoencoder-enzyme-features",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:sparse-autoencoder-enzyme-features",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:structure-aware-biological-ml",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md::mentions::entity:virtual-cells",
+      "from": "doc:topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md",
+      "type": "mentions",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
       "id": "doc:topics/notes/structural-decision-support.md::cites::source:https-arxiv-org-abs-2606-04020",
       "from": "doc:topics/notes/structural-decision-support.md",
       "type": "cites",
@@ -1636,6 +2079,13 @@
       "source": "topics/notes/structural-decision-support.md"
     },
     {
+      "id": "entity:easynano::uses::entity:structure-guided-generation",
+      "from": "entity:easynano",
+      "type": "uses",
+      "to": "entity:structure-guided-generation",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
       "id": "entity:epiformer::targets::entity:epitope-prediction",
       "from": "entity:epiformer",
       "type": "targets",
@@ -1678,6 +2128,13 @@
       "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
     },
     {
+      "id": "entity:genomically-anchored-personalized-interpretation::uses::entity:genomic-priors",
+      "from": "entity:genomically-anchored-personalized-interpretation",
+      "type": "uses",
+      "to": "entity:genomic-priors",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
       "id": "entity:jepa-dna::exemplifies::entity:structure-aware-biological-ml",
       "from": "entity:jepa-dna",
       "type": "exemplifies",
@@ -1690,6 +2147,20 @@
       "type": "uses",
       "to": "entity:adaptive-tokenization",
       "source": "topics/notes/foundation-models-and-abstraction-boundaries.md"
+    },
+    {
+      "id": "entity:likelihood-aware-binns::models::entity:heteroscedastic-noise",
+      "from": "entity:likelihood-aware-binns",
+      "type": "models",
+      "to": "entity:heteroscedastic-noise",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "entity:m6a-form::uses::entity:weak-to-strong-supervision",
+      "from": "entity:m6a-form",
+      "type": "uses",
+      "to": "entity:weak-to-strong-supervision",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
     },
     {
       "id": "entity:markdown-metadata-graph::expands::entity:bio-ml-knowledge-base",
@@ -1713,6 +2184,13 @@
       "source": "topics/notes/structure-aware-biological-ml.md"
     },
     {
+      "id": "entity:ocoo-t::strengthens::entity:virtual-cells",
+      "from": "entity:ocoo-t",
+      "type": "strengthens",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
       "id": "entity:predictive-lipidomics-acquisition::models::entity:experimental-process",
       "from": "entity:predictive-lipidomics-acquisition",
       "type": "models",
@@ -1725,6 +2203,13 @@
       "type": "improves",
       "to": "entity:finite-budget-evaluation",
       "source": "topics/notes/forward-looking-bio-evaluation.md"
+    },
+    {
+      "id": "entity:protein-language-model-geometry::informs::entity:controllable-biological-ml",
+      "from": "entity:protein-language-model-geometry",
+      "type": "informs",
+      "to": "entity:controllable-biological-ml",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
     },
     {
       "id": "entity:representation-benchmarking::clarifies::entity:abstraction-boundary",
@@ -1781,6 +2266,20 @@
       "type": "tracks",
       "to": "entity:virobench",
       "source": "research_plan/source_registry.md"
+    },
+    {
+      "id": "entity:span-detector::models::entity:censored-observations",
+      "from": "entity:span-detector",
+      "type": "models",
+      "to": "entity:censored-observations",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "entity:sparse-autoencoder-enzyme-features::improves::entity:interpretability",
+      "from": "entity:sparse-autoencoder-enzyme-features",
+      "type": "improves",
+      "to": "entity:interpretability",
+      "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
     },
     {
       "id": "entity:spatial-single-cell-reconstruction::informs::entity:virtual-cells",
@@ -1861,18 +2360,20 @@
     }
   ],
   "nodeTypeCounts": {
-    "document": 9,
-    "entity": 56,
-    "source": 23,
-    "topic": 24
+    "document": 10,
+    "entity": 73,
+    "source": 33,
+    "topic": 25
   },
   "entityTypeCounts": {
-    "ResearchTheme": 10,
-    "Method": 18,
-    "Unspecified": 5,
+    "ResearchTheme": 12,
+    "Method": 26,
+    "Unspecified": 10,
     "Task": 9,
     "ProjectIdea": 7,
     "Benchmark": 4,
+    "Framework": 1,
+    "MeasurementModel": 1,
     "SystemDesign": 1,
     "Venue": 1,
     "FailureMode": 1
