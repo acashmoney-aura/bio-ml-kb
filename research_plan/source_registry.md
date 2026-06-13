@@ -85,3 +85,8 @@ Updated: 2026-06-07
 | Genomic priors for personalization | https://arxiv.org/abs/2606.13556 | framework paper | evidence-graded Bayesian genomic priors for physiological interpretation |
 | Likelihood-aware mechanistic learning | https://arxiv.org/abs/2606.13475 | paper | jointly learning biological dynamics and heteroscedastic noise |
 | Protein language model geometry | https://arxiv.org/abs/2606.12609 | paper | probing what representation geometry captures in protein language models |
+| Bioinformatics software ecosystem | https://www.bioconductor.org/ | project site | core R-based open-source ecosystem for reproducible computational biology workflows |
+| Bioconductor mission and package model | https://new.bioconductor.org/about/ | project overview | explains the reproducibility, package, release, annotation, and training model behind Bioconductor |
+| Bioconductor platform paper | http://www.nature.com/nmeth/journal/v12/n2/abs/nmeth.3252.html | paper | canonical overview of Bioconductor as an analysis and software platform |
+| Deep regulatory sequence modeling | https://www.nature.com/articles/s41588-022-01048-5 | paper | enhancer activity prediction and synthetic enhancer design from DNA sequence |
+| DeepSTARR codebase | https://github.com/bernardo-de-almeida/DeepSTARR | code | practical implementation details, assay context, architecture, and inference workflow |

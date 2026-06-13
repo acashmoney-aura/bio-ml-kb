@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-06-12",
   "counts": {
-    "nodes": 141,
-    "edges": 208,
-    "documents": 10
+    "nodes": 162,
+    "edges": 245,
+    "documents": 11
   },
   "nodes": [
     {
@@ -29,6 +29,14 @@
       "kind": "brief",
       "path": "topics/brief.md",
       "updated": "2026-06-07"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "label": "Bioconductor, DeepSTARR, and where they fit in the bio-ML stack",
+      "nodeType": "document",
+      "kind": "synthesis-note",
+      "path": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "updated": "2026-06-12"
     },
     {
       "id": "doc:topics/notes/forward-looking-bio-evaluation.md",
@@ -129,9 +137,23 @@
       "status": null
     },
     {
+      "id": "entity:annotation-packages",
+      "label": "annotation packages",
+      "nodeType": "entity",
+      "entityType": "Infrastructure",
+      "status": null
+    },
+    {
       "id": "entity:bio-ml-knowledge-base",
       "label": "bio ML knowledge base",
       "nodeType": "entity"
+    },
+    {
+      "id": "entity:bioconductor",
+      "label": "Bioconductor",
+      "nodeType": "entity",
+      "entityType": "Framework",
+      "status": null
     },
     {
       "id": "entity:biological-conclusions",
@@ -151,9 +173,23 @@
       "nodeType": "entity"
     },
     {
+      "id": "entity:cis-regulatory-grammar",
+      "label": "cis-regulatory grammar",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme",
+      "status": null
+    },
+    {
       "id": "entity:controllable-biological-ml",
       "label": "controllable biological ML",
       "nodeType": "entity"
+    },
+    {
+      "id": "entity:deepstarr",
+      "label": "DeepSTARR",
+      "nodeType": "entity",
+      "entityType": "Method",
+      "status": null
     },
     {
       "id": "entity:degradomap",
@@ -167,6 +203,13 @@
       "label": "EasyNano",
       "nodeType": "entity",
       "entityType": "Method",
+      "status": null
+    },
+    {
+      "id": "entity:enhancer-activity-prediction",
+      "label": "enhancer activity prediction",
+      "nodeType": "entity",
+      "entityType": "Task",
       "status": null
     },
     {
@@ -264,6 +307,13 @@
       "status": null
     },
     {
+      "id": "entity:genomicranges",
+      "label": "GenomicRanges",
+      "nodeType": "entity",
+      "entityType": "Infrastructure",
+      "status": null
+    },
+    {
       "id": "entity:genomics-foundation-models",
       "label": "genomics foundation models",
       "nodeType": "entity",
@@ -336,6 +386,13 @@
       "label": "markdown metadata graph",
       "nodeType": "entity",
       "entityType": "SystemDesign",
+      "status": null
+    },
+    {
+      "id": "entity:measurement-aware-biological-ml",
+      "label": "measurement-aware biological ML",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme",
       "status": null
     },
     {
@@ -437,6 +494,13 @@
       "status": null
     },
     {
+      "id": "entity:r",
+      "label": "R",
+      "nodeType": "entity",
+      "entityType": "Framework",
+      "status": null
+    },
+    {
       "id": "entity:representation-benchmarking",
       "label": "representation benchmarking",
       "nodeType": "entity",
@@ -448,6 +512,13 @@
       "label": "representation-boundary benchmark",
       "nodeType": "entity",
       "entityType": "ProjectIdea",
+      "status": null
+    },
+    {
+      "id": "entity:reproducible-genomics-workflows",
+      "label": "reproducible genomics workflows",
+      "nodeType": "entity",
+      "entityType": "ResearchTheme",
       "status": null
     },
     {
@@ -505,6 +576,13 @@
       "status": null
     },
     {
+      "id": "entity:starr-seq",
+      "label": "STARR-seq",
+      "nodeType": "entity",
+      "entityType": "Task",
+      "status": null
+    },
+    {
       "id": "entity:structure-aware-biological-ml",
       "label": "structure-aware biological ML",
       "nodeType": "entity",
@@ -522,6 +600,13 @@
       "id": "entity:structure-guided-generation",
       "label": "structure-guided generation",
       "nodeType": "entity"
+    },
+    {
+      "id": "entity:summarizedexperiment",
+      "label": "SummarizedExperiment",
+      "nodeType": "entity",
+      "entityType": "Infrastructure",
+      "status": null
     },
     {
       "id": "entity:tada-bench",
@@ -606,6 +691,12 @@
       "label": "http://arxiv.org/abs/2606.12219",
       "nodeType": "source",
       "url": "http://arxiv.org/abs/2606.12219"
+    },
+    {
+      "id": "source:http-www-nature-com-nmeth-journal-v12-n2-abs-nmeth-3252-html",
+      "label": "http://www.nature.com/nmeth/journal/v12/n2/abs/nmeth.3252.html",
+      "nodeType": "source",
+      "url": "http://www.nature.com/nmeth/journal/v12/n2/abs/nmeth.3252.html"
     },
     {
       "id": "source:https-arxiv-org-abs-2512-00306",
@@ -752,10 +843,34 @@
       "url": "https://arxiv.org/abs/2606.13556"
     },
     {
+      "id": "source:https-genomebiology-biomedcentral-com-track-pdf-10-1186-gb-2004-5-10-r80-pdf",
+      "label": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/gb-2004-5-10-r80.pdf",
+      "nodeType": "source",
+      "url": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/gb-2004-5-10-r80.pdf"
+    },
+    {
+      "id": "source:https-github-com-bernardo-de-almeida-deepstarr",
+      "label": "https://github.com/bernardo-de-almeida/DeepSTARR",
+      "nodeType": "source",
+      "url": "https://github.com/bernardo-de-almeida/DeepSTARR"
+    },
+    {
       "id": "source:https-iclr-cc-virtual-2026-workshop-10000787",
       "label": "https://iclr.cc/virtual/2026/workshop/10000787",
       "nodeType": "source",
       "url": "https://iclr.cc/virtual/2026/workshop/10000787"
+    },
+    {
+      "id": "source:https-new-bioconductor-org-about",
+      "label": "https://new.bioconductor.org/about/",
+      "nodeType": "source",
+      "url": "https://new.bioconductor.org/about/"
+    },
+    {
+      "id": "source:https-www-bioconductor-org",
+      "label": "https://www.bioconductor.org/",
+      "nodeType": "source",
+      "url": "https://www.bioconductor.org/"
     },
     {
       "id": "source:https-www-biorxiv-org-content-10-64898-2026-05-03-722489v1-full-pdf",
@@ -768,6 +883,12 @@
       "label": "https://www.nature.com/articles/s41586-026-10176-5",
       "nodeType": "source",
       "url": "https://www.nature.com/articles/s41586-026-10176-5"
+    },
+    {
+      "id": "source:https-www-nature-com-articles-s41588-022-01048-5",
+      "label": "https://www.nature.com/articles/s41588-022-01048-5",
+      "nodeType": "source",
+      "url": "https://www.nature.com/articles/s41588-022-01048-5"
     },
     {
       "id": "source:https-www-nature-com-articles-s41746-025-02198-6",
@@ -863,6 +984,21 @@
     {
       "id": "topic:protein-design",
       "label": "protein-design",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:regulatory-genomics",
+      "label": "regulatory-genomics",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:reproducibility",
+      "label": "reproducibility",
+      "nodeType": "topic"
+    },
+    {
+      "id": "topic:software-infrastructure",
+      "label": "software-infrastructure",
       "nodeType": "topic"
     },
     {
@@ -1125,6 +1261,188 @@
       "type": "mentions",
       "to": "entity:virtual-cells",
       "source": "topics/brief.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::cites::source:http-www-nature-com-nmeth-journal-v12-n2-abs-nmeth-3252-html",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "cites",
+      "to": "source:http-www-nature-com-nmeth-journal-v12-n2-abs-nmeth-3252-html",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::cites::source:https-genomebiology-biomedcentral-com-track-pdf-10-1186-gb-2004-5-10-r80-pdf",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "cites",
+      "to": "source:https-genomebiology-biomedcentral-com-track-pdf-10-1186-gb-2004-5-10-r80-pdf",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::cites::source:https-github-com-bernardo-de-almeida-deepstarr",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "cites",
+      "to": "source:https-github-com-bernardo-de-almeida-deepstarr",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::cites::source:https-new-bioconductor-org-about",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "cites",
+      "to": "source:https-new-bioconductor-org-about",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::cites::source:https-www-bioconductor-org",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "cites",
+      "to": "source:https-www-bioconductor-org",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::cites::source:https-www-nature-com-articles-s41588-022-01048-5",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "cites",
+      "to": "source:https-www-nature-com-articles-s41588-022-01048-5",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::has_topic::topic:biological-ml",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "has_topic",
+      "to": "topic:biological-ml",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::has_topic::topic:computational-biology",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "has_topic",
+      "to": "topic:computational-biology",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::has_topic::topic:genomics",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "has_topic",
+      "to": "topic:genomics",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::has_topic::topic:regulatory-genomics",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "has_topic",
+      "to": "topic:regulatory-genomics",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::has_topic::topic:reproducibility",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "has_topic",
+      "to": "topic:reproducibility",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::has_topic::topic:software-infrastructure",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "has_topic",
+      "to": "topic:software-infrastructure",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:annotation-packages",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:annotation-packages",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:bioconductor",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:bioconductor",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:cis-regulatory-grammar",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:cis-regulatory-grammar",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:deepstarr",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:deepstarr",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:enhancer-activity-prediction",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:enhancer-activity-prediction",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:genomic-foundation-models",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:genomic-foundation-models",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:genomicranges",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:genomicranges",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:measurement-aware-biological-ml",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:measurement-aware-biological-ml",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:r",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:r",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:reproducible-genomics-workflows",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:reproducible-genomics-workflows",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:starr-seq",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:starr-seq",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:structure-aware-biological-ml",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:summarizedexperiment",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:summarizedexperiment",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md::mentions::entity:virtual-cells",
+      "from": "doc:topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md",
+      "type": "mentions",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
     },
     {
       "id": "doc:topics/notes/forward-looking-bio-evaluation.md::cites::source:https-arxiv-org-abs-2605-26690",
@@ -2065,11 +2383,81 @@
       "source": "topics/notes/virtual-cells-and-genomics-ml.md"
     },
     {
+      "id": "entity:bioconductor::distributes::entity:annotation-packages",
+      "from": "entity:bioconductor",
+      "type": "distributes",
+      "to": "entity:annotation-packages",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:bioconductor::provides::entity:reproducible-genomics-workflows",
+      "from": "entity:bioconductor",
+      "type": "provides",
+      "to": "entity:reproducible-genomics-workflows",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:bioconductor::supports::entity:genomicranges",
+      "from": "entity:bioconductor",
+      "type": "supports",
+      "to": "entity:genomicranges",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:bioconductor::supports::entity:measurement-aware-biological-ml",
+      "from": "entity:bioconductor",
+      "type": "supports",
+      "to": "entity:measurement-aware-biological-ml",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:bioconductor::supports::entity:summarizedexperiment",
+      "from": "entity:bioconductor",
+      "type": "supports",
+      "to": "entity:summarizedexperiment",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
       "id": "entity:birdnet::exemplifies::entity:structure-aware-biological-ml",
       "from": "entity:birdnet",
       "type": "exemplifies",
       "to": "entity:structure-aware-biological-ml",
       "source": "topics/notes/structure-aware-biological-ml.md"
+    },
+    {
+      "id": "entity:deepstarr::complements::entity:genomic-foundation-models",
+      "from": "entity:deepstarr",
+      "type": "complements",
+      "to": "entity:genomic-foundation-models",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:deepstarr::exemplifies::entity:structure-aware-biological-ml",
+      "from": "entity:deepstarr",
+      "type": "exemplifies",
+      "to": "entity:structure-aware-biological-ml",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:deepstarr::learns_from::entity:starr-seq",
+      "from": "entity:deepstarr",
+      "type": "learns_from",
+      "to": "entity:starr-seq",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:deepstarr::predicts::entity:enhancer-activity-prediction",
+      "from": "entity:deepstarr",
+      "type": "predicts",
+      "to": "entity:enhancer-activity-prediction",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
+    },
+    {
+      "id": "entity:deepstarr::probes::entity:cis-regulatory-grammar",
+      "from": "entity:deepstarr",
+      "type": "probes",
+      "to": "entity:cis-regulatory-grammar",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
     },
     {
       "id": "entity:degradomap::targets::entity:protac-degradability",
@@ -2084,6 +2472,13 @@
       "type": "uses",
       "to": "entity:structure-guided-generation",
       "source": "topics/notes/recent-bio-ml-priors-noise-and-virtual-cells.md"
+    },
+    {
+      "id": "entity:enhancer-activity-prediction::informs::entity:virtual-cells",
+      "from": "entity:enhancer-activity-prediction",
+      "type": "informs",
+      "to": "entity:virtual-cells",
+      "source": "topics/notes/bioconductor-and-deepstarr-in-the-bio-ml-stack.md"
     },
     {
       "id": "entity:epiformer::targets::entity:epitope-prediction",
@@ -2360,19 +2755,20 @@
     }
   ],
   "nodeTypeCounts": {
-    "document": 10,
-    "entity": 73,
-    "source": 33,
-    "topic": 25
+    "document": 11,
+    "entity": 84,
+    "source": 39,
+    "topic": 28
   },
   "entityTypeCounts": {
-    "ResearchTheme": 12,
-    "Method": 26,
+    "ResearchTheme": 15,
+    "Method": 27,
+    "Infrastructure": 3,
     "Unspecified": 10,
-    "Task": 9,
+    "Framework": 3,
+    "Task": 11,
     "ProjectIdea": 7,
     "Benchmark": 4,
-    "Framework": 1,
     "MeasurementModel": 1,
     "SystemDesign": 1,
     "Venue": 1,
